@@ -1,0 +1,7 @@
+{
+    "name": "gla/accelerator_core_alpha",
+    "type": " drupal-profile",
+    "license": "OGL-3.0",
+    "description": "Core components used by the GLA drupal accelerator and all drupal sites within the GLA estate”
+}
+
