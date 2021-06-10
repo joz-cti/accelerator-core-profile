@@ -17,10 +17,9 @@ To create a new project called `my-project` using this template:
 ```bash
 composer create-project gla/accelerator_core_alpha my-project
 cd my-project
-lando start
-lando drush si -y accelerator --site-name='My project' --account-name=root --account-pass=password install_configure_form.enable_update_status_emails=NULL --verbose
-git commit .
-git commit -m "Initial commit"
+# Then follow the 'Initial post-project creation steps' 
+# instructions in the new README.md which will have been 
+# created for you automatically.
 ```
 
 ## Working on the Accelerator directly (draft process)

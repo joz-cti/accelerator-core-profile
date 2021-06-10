@@ -21,7 +21,7 @@
     ],
     "require": {
         "composer/installers": "^1.10",
-        "cweagans/composer-patches": "^1.6",
+        "cweagans/composer-patches": "~1.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
@@ -34,7 +34,7 @@
         "squizlabs/php_codesniffer": "^3.6",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
         "drupal/devel": "^4.1",
-        "topfloor/composer-cleanup-vcs-dirs": "^1.0",
+        "topfloor/composer-cleanup-vcs-dirs": "dev-composer-2",
         "kint-php/kint": "^3.3"
     },
     "conflict": {
@@ -54,11 +54,25 @@
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
         "drupal-scaffold": {
+            "allowed-packages": [
+                "drupal/core"
+            ],
             "locations": {
                 "web-root": "web/"
             },
             "file-mapping": {
-                "[web-root]/web.config": false
+                "[web-root]/web.config": false,
+                "[web-root]/.htaccess": false,
+                "[web-root]/sites/development.services.yml": false,
+                "[web-root]/sites/default/settings.php": {
+                    "force-append": true,
+                    "append": "assets/composer/append-to-settings.txt"
+                },
+                "[web-root]/sites/default/settings.overrides.php": {
+                    "mode": "replace",
+                    "path": "assets/composer/settings.overrides.php",
+                    "overwrite": false
+                }
             }
         },
         "installer-paths": {
@@ -86,9 +100,6 @@
                 "Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-05-09/2924549-30.patch",
                 "Allow tokens for url of the Link field": "https://www.drupal.org/files/issues/2020-04-22/core_2903336-33_allow-tokens-in-link-url.patch",
                 "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch"
-            },
-            "topfloor/composer-cleanup-vcs-dirs": {
-                "Composer 2 support": "https://patch-diff.githubusercontent.com/raw/TopFloorTech/composer-cleanup-vcs-dirs/pull/2.patch"
             },
             "drupal/devel": {
                 "Brings back the Available Methods & Properties tabs for Kint dumps — Issue #221": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kint.patch"
