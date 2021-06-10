@@ -45,6 +45,11 @@
     "config": {
         "sort-packages": true
     },
+    "scripts": {
+        "post-create-project-cmd": [
+            "mv -f README-once-project-created.md README.md"
+        ]
+    },
     "extra": {
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
