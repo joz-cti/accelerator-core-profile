@@ -20,12 +20,12 @@ lando start
    key based on the directory passed to the Composer create-project command,
    perhaps?
 
-2. Start Lando, install a site based on the `accelerator` profile, export the
+2. Start Lando, install a site based on the `gla_core` profile, export the
    config, then commit the results:
 
 ```bash
 lando start
-lando drush si -y accelerator --site-name='My project' --account-name=root --account-pass=password install_configure_form.enable_update_status_emails=NULL --verbose
+lando drush si -y gla_core --site-name='My project' --account-name=root --account-pass=password install_configure_form.enable_update_status_emails=NULL --verbose
 lando drush cex -y
 git commit .
 git commit -m "Initial commit"
