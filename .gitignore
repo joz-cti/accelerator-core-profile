@@ -14,3 +14,7 @@ web/sites/*/files
 # Ignore PhpStorm IDE configuration
 .idea
 /web/.phpstorm.meta.php
+
+# Ignore files managed by the Drupal scaffolding Composer plugin.
+/.editorconfig
+/.gitattributes
