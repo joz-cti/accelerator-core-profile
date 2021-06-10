@@ -17,8 +17,10 @@ To create a new project called `my-project` using this template:
 ```bash
 composer create-project gla/accelerator_core_alpha my-project
 cd my-project
-# @TODO Lando install steps
-# @TODO Drupal/Drush si (site install) steps
+lando start
+lando drush si -y accelerator --site-name='My project' --account-name=root --account-pass=password install_configure_form.enable_update_status_emails=NULL --verbose
+git commit .
+git commit -m "Initial commit"
 ```
 
 ## Working on the Accelerator directly (draft process)
@@ -31,9 +33,6 @@ that can then be used as a local development environment.
 # This will take all committed changes to the `main` branch and use it
 # to create a new Drupal project in the ~/Sites/my-project directory.
 ./scripts/composer-create-project-locally.sh main ~/Sites/my-project
-cd my-project
-# @TODO Lando install steps
-# @TODO Drupal/Drush si (site install) steps
 ```
 
 ## Using Composer scripts
