@@ -52,13 +52,13 @@ services:
 tooling:
   drush:
     service: appserver
-    cmd: '/app/bin/drush'
+    cmd: '/app/vendor/bin/drush'
   phpcs:
     service: appserver
-    cmd: '/app/bin/phpcs'
+    cmd: '/app/vendor/bin/phpcs'
   phpcbf:
     service: appserver
-    cmd: '/app/bin/phpcbf'
+    cmd: '/app/vendor/bin/phpcbf'
   node:
     service: node
   npm:
