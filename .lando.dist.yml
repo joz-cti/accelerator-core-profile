@@ -1,0 +1,57 @@
+name: accelerator
+recipe: drupal9
+config:
+  webroot: web
+  php: "8.0"
+  composer_version: "2"
+  # 1.18 is the highest currently supported.
+  # https://docs.lando.dev/config/nginx.html
+  via: nginx:1.18
+  database: mysql:8.0
+proxy:
+  mailhog:
+    - mail.accelerator.lndo.site
+services:
+  appserver:
+    overrides:
+      environment:
+        DRUSH_OPTIONS_ROOT: "/app/web"
+        DRUSH_OPTIONS_URI: "https://accelerator.lndo.site"
+        SIMPLETEST_DB: "mysql://database:database@database/database"
+        DB_NAME: "database"
+        DB_USER: "database"
+        DB_PASSWORD: "database"
+    build:
+      - composer install
+  database:
+    creds:
+      user: database
+
+      password: database
+      database: database
+  redis:
+    type: redis:5
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: true
+  node:
+    type: "node:14"
+    overrides:
+      ports:
+        - "3050:3050"
+tooling:
+  drush:
+    service: appserver
+    cmd: "/app/bin/drush"
+  phpcs:
+    service: appserver
+    cmd: "/app/bin/phpcs"
+  phpcbf:
+    service: appserver
+    cmd: "/app/bin/phpcbf"
+  node:
+    service: node
+  npm:
+    service: node
