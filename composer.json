@@ -2,6 +2,92 @@
     "name": "gla/accelerator_core_alpha",
     "type": "drupal-profile",
     "license": "OGL-3.0",
-    "description": "Core components used by the GLA drupal accelerator and all drupal sites within the GLA estate"
+    "description": "Project template for the GLA Accelerator",
+    "homepage": "https://github.com/localgovdrupal/localgov_project",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/issue/whoops-3185130",
+            "comment": "Added as workaround until there is a D9 version of Whoops"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.10",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core-project-message": "^9.1",
+        "drupal/core-recommended": "^9.1",
+        "drupal/whoops": "dev-3185130-d9-compatibility as 1.0",
+        "drush/drush": "^10"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9.1",
+        "drupal/coder": "^8.3",
+        "squizlabs/php_codesniffer": "^3.6",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "drupal/devel": "^4.1",
+        "topfloor/composer-cleanup-vcs-dirs": "^1.0",
+        "kint-php/kint": "^3.3"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "enable-patching": true,
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            },
+            "file-mapping": {
+                "[web-root]/web.config": false
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+        },
+        "patches": {
+            "drupal/core": {
+                "Notice: Undefined index: #type in drupal_process_states()": "https://www.drupal.org/files/issues/2019-12-05/2700667-89.patch",
+                "Install Profile fails if Module depends on Theme": "https://www.drupal.org/files/issues/2018-12-19/0001-Attempt-to-install-a-theme-before-throwing-an-except.patch",
+                "Provide option to set ajax indicator with .use-ajax and .use-ajax-submit": "https://www.drupal.org/files/issues/2020-12-16/2818463-15.patch",
+                "Add a hook to modify oEmbed resource data": "https://www.drupal.org/files/issues/2019-03-25/media_hook-oembed-resource-data-alter__example.patch",
+                "Drupal.ajax does not guarantee that 'add new JS file to page' commands have finished before calling said JS": "https://www.drupal.org/files/issues/2020-11-16/1988968-218-92X.patch",
+                "Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
+                "[PP-1] JSON:API is typehinting LatestRevisionCheck because there is no Entity Revision Access API yet, remove that typehint once such an API exists": "https://www.drupal.org/files/issues/2019-10-21/LatestRevisionCheck-13092187-24.patch",
+                "State required asterisk doesn't show": "https://www.drupal.org/files/issues/2021-02-01/2912092-34.patch",
+                "Can only intentionally re-render an entity with references 20 times": "https://www.drupal.org/files/issues/2019-12-04/drupal-entity_re-rendering_limited-2940605-19.patch",
+                "Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-05-09/2924549-30.patch",
+                "Allow tokens for url of the Link field": "https://www.drupal.org/files/issues/2020-04-22/core_2903336-33_allow-tokens-in-link-url.patch",
+                "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch"
+            },
+            "topfloor/composer-cleanup-vcs-dirs": {
+                "Composer 2 support": "https://patch-diff.githubusercontent.com/raw/TopFloorTech/composer-cleanup-vcs-dirs/pull/2.patch"
+            },
+            "drupal/devel": {
+                "Brings back the Available Methods & Properties tabs for Kint dumps — Issue #221": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kint.patch"
+            }
+        }
+    }
 }
-
