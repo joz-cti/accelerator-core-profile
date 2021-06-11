@@ -58,7 +58,7 @@ $databases['default']['default'] = [
  */
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/services.local.yml';
 
-$config['environment_indicator.indicator']['name'] = 'Production';
+$config['environment_indicator.indicator']['name'] = '__DRUPAL_ENVIRONMENT__';
 $config['environment_indicator.indicator']['fg_color'] = '#FFFFFF';
 $config['environment_indicator.indicator']['bg_color'] = '#B71C1C';
 

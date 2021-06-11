@@ -194,20 +194,6 @@ $config['environment_indicator.indicator']['name'] = getenv('DRUPAL_ENVIRONMENT'
 $config['environment_indicator.indicator']['fg_color'] = '#ffffff';
 $config['environment_indicator.indicator']['bg_color'] = '#0074BD';
 
-$config['recaptcha.settings']['site_key'] = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
-$config['recaptcha.settings']['secret_key'] = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe';
-
-// Add Mailhog as the SMTP host.
-// We Config Ignore swiftmailer.transport so we can use the Drupal UI on prod
-// to set the client's SMTP details without having to commit them to Git.
-$config['swiftmailer.transport']['transport'] = 'smtp';
-$config['swiftmailer.transport']['smtp_host'] = 'mailhog';
-$config['swiftmailer.transport']['smtp_port'] = 1025;
-$config['swiftmailer.transport']['smtp_encryption'] = '0';
-$config['swiftmailer.transport']['smtp_credential_provider'] = 'swiftmailer';
-$config['swiftmailer.transport']['smtp_credentials']['swiftmailer']['username'] = '';
-$config['swiftmailer.transport']['smtp_credentials']['swiftmailer']['password'] = NULL;
-
 /**
  * Redis.
  */

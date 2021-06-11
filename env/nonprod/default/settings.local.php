@@ -72,17 +72,6 @@ $config['config_split.config_split.prod']['status'] = FALSE;
 $settings['file_private_path'] = getenv('DRUPAL_PUBLIC_FILES_PATH');
 $settings['file_temp_path'] = getenv('DRUPAL_TEMP_FILES_PATH');
 
-// Add Mailhog as the SMTP host.
-// We Config Ignore swiftmailer.transport so we can use the Drupal UI on prod
-// to set the client's SMTP details without having to commit them to Git.
-$config['swiftmailer.transport']['transport'] = 'smtp';
-$config['swiftmailer.transport']['smtp_host'] = 'localhost';
-$config['swiftmailer.transport']['smtp_port'] = 1025;
-$config['swiftmailer.transport']['smtp_encryption'] = '0';
-$config['swiftmailer.transport']['smtp_credential_provider'] = 'swiftmailer';
-$config['swiftmailer.transport']['smtp_credentials']['swiftmailer']['username'] = '';
-$config['swiftmailer.transport']['smtp_credentials']['swiftmailer']['password'] = NULL;
-
 /**
  * Redis.
  */
