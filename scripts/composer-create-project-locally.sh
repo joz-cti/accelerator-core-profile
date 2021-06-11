@@ -19,7 +19,7 @@
 # Capture command line args, or set defaults.
 BRANCH_NAME=${1:-develop}
 DEST_DIR=${2:-~/Sites/example-accelerator-site}
-PACKAGE_NAME="gla/accelerator_core_alpha"
+PACKAGE_NAME="gla/accelerator-core-alpha"
 
 # Warn the dev if they have uncommitted changes since they won't
 # be included in the spawned project.

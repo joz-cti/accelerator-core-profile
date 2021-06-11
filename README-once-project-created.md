@@ -1,7 +1,7 @@
 # Add your project name here
 
 This is a project created by the
-[GLA Accelerator](https://github.com/GreaterLondonAuthority/accelerator_core_alpha).
+[GLA Accelerator](https://github.com/GreaterLondonAuthority/accelerator-core-alpha).
 
 ## Local development
 

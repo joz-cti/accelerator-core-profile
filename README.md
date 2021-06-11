@@ -15,7 +15,7 @@ well as CTI's Voyager Drupal profile.
 To create a new project called `my-project` using this template:
 
 ```bash
-composer create-project gla/accelerator_core_alpha my-project
+composer create-project gla/accelerator-core-alpha my-project
 cd my-project
 # Then follow the 'Initial post-project creation steps'
 # instructions in the new README.md which will have been
