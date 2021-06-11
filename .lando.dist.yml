@@ -26,6 +26,11 @@ services:
         DRUPAL_ENVIRONMENT: 'docker'
         REDIS_HOST: 'redis'
         REDIS_PORT: '6379'
+    build_as_root:
+      # Install jq so we can use it (in the future) to manipulate the Composer.json file to use symlinks to local
+      # packages when in development.
+      # https://substrakt.com/journal/easy-peasy-composer-local-package-symlink-composer-link
+      - apt-get update -y && apt-get install -y jq
     build:
       - composer install
       # Create symlinks to Docker/local development specific settings files.

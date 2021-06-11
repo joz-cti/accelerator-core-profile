@@ -34,6 +34,17 @@ that can then be used as a local development environment.
 ./scripts/composer-create-project-locally.sh main ~/Sites/my-project
 ```
 
+Once you have a working Drupal site in `my-project` then you may wish to set up
+symlinks to use local copies of some packages that Composer will (once we build
+them) have installed for you (e.g. the theme or a feature module). This will
+allow you to test local changes more easily.
+
+We can do that by following this process:
+https://fetzi.dev/developing-composer-packages-locally (but don't commit the changes). In the future, we can
+add [JQ](https://stedolan.github.io/jq) inside Lando, then use this script to
+automate the process:
+https://substrakt.com/journal/easy-peasy-composer-local-package-symlink-composer-link.
+
 ## Using Composer scripts
 
 All build pre/post build commands and patches are to be triggered through
