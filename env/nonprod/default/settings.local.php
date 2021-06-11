@@ -4,10 +4,6 @@
  * @file
  * Local environment override configuration.
  *
- * CTI Platform will automatically place symlinks from
- * ./env/[env]/[site]/settings.local.php to ./sites/[site]/settings.local.php
- * for the current environment.
- *
  * To enable this feature, go to the bottom of 'sites/default/settings.php' and
  * uncomment the commented lines that mention 'settings.local.php'.
  */
