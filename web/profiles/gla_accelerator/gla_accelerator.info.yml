@@ -1,10 +1,20 @@
 name: GLA accelerator
 type: profile
 description: 'Install contrib modules.'
-core_version_requirement: '^8.8 || ^9'
-
-distribution:
-  name: GLA accelerator
 
 langcode: en
+
+# Modules to install to support the profile.
+#install:
+
+# Required modules
+# Note that any dependencies of the modules listed here will be installed automatically.
+#dependencies:
+#  - node
+#  - block
+#  - views
+
+themes:
+  - bartik
+
 
