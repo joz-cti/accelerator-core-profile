@@ -1,0 +1,72 @@
+name: accelerator
+recipe: drupal9
+config:
+  webroot: web
+  php: '8.0'
+  composer_version: '2'
+  # 1.18 is the highest currently supported.
+  # https://docs.lando.dev/config/nginx.html
+  via: nginx:1.18
+  database: mysql:8.0
+proxy:
+  mailhog:
+    - mail.accelerator.lndo.site
+services:
+  appserver:
+    overrides:
+      environment:
+        DRUSH_OPTIONS_ROOT: '/app/web'
+        DRUSH_OPTIONS_URI: 'https://accelerator.lndo.site'
+        SIMPLETEST_DB: 'mysql://database:database@database/database'
+        DB_NAME: 'database'
+        DB_USER: 'database'
+        DB_PASSWORD: 'database'
+        DB_HOST: 'database'
+        DB_PORT: '3306'
+        DRUPAL_ENVIRONMENT: 'docker'
+        REDIS_HOST: 'redis'
+        REDIS_PORT: '6379'
+    build_as_root:
+      # Install jq so we can use it (in the future) to manipulate the Composer.json file to use symlinks to local
+      # packages when in development.
+      # https://substrakt.com/journal/easy-peasy-composer-local-package-symlink-composer-link
+      - apt-get update -y && apt-get install -y jq
+    build:
+      - composer install
+      # Create symlinks to Docker/local development specific settings files.
+      - ln -sf /app/env/docker/default/settings.local.php /app/web/sites/default/settings.local.php
+      - ln -sf /app/env/docker/services.local.yml /app/web/sites/services.local.yml
+  database:
+    creds:
+      user: database
+      password: database
+      database: database
+  redis:
+    type: redis:5
+    portforward: true
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: true
+  node:
+    type: 'node:14'
+    overrides:
+      ports:
+        - '3050:3050'
+tooling:
+  drush:
+    service: appserver
+    cmd: '/app/vendor/bin/drush'
+  phpcs:
+    service: appserver
+    cmd: '/app/vendor/bin/phpcs'
+  phpcbf:
+    service: appserver
+    cmd: '/app/vendor/bin/phpcbf'
+  node:
+    service: node
+  npm:
+    service: node
+  redis-cli:
+    service: redis
