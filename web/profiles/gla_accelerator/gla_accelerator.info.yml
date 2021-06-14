@@ -1,0 +1,10 @@
+name: GLA accelerator
+type: profile
+description: 'Install contrib modules.'
+core_version_requirement: '^8.8 || ^9'
+
+distribution:
+  name: GLA accelerator
+
+langcode: en
+
