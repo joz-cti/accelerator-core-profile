@@ -1,6 +1,7 @@
 name: GLA core
 type: profile
 description: 'Install base and contrib modules.'
+core_version_requirement: '^8.8 || ^9'
 
 langcode: en
 
