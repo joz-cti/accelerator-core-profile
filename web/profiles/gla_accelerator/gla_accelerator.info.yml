@@ -4,8 +4,39 @@ description: 'Install contrib modules.'
 
 langcode: en
 
-# Modules to install to support the profile.
-#install:
+# Modules to install: copied from the 'minimal' profile.
+install:
+  - node
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+
+# Modules to install: main contrib modules.
+  - access_unpublished
+  - admin_toolbar
+  - advagg
+  - bamboo_twig
+  - chosen
+  - config_filter
+  - config_ignore
+  - config_rewrite
+  - config_split
+  - content_lock
+  - entity_usage
+  - environment_indicator
+  - field_group
+  - google_tag
+  - menu_admin_per_menu
+  - metatag
+  - multiline_config
+  - paragraphs
+# Consider installing paragraphs 'helper' modules like paragraphs_library to assist development of components
+  - password_policy
+  - rabbit_hole
+  - replicate
+  - scheduler
+  - webform
 
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
@@ -16,5 +47,6 @@ langcode: en
 
 themes:
   - bartik
+  - gla_accelerator_theme
 
 
