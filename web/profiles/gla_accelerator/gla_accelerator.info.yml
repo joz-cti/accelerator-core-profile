@@ -1,12 +1,13 @@
 name: GLA accelerator
 type: profile
-description: 'Install contrib modules.'
+description: 'Install base and contrib modules.'
 
 langcode: en
 
 # Modules to install: copied from the 'minimal' profile.
 install:
   - node
+  - views
   - block
   - dblog
   - page_cache
@@ -37,13 +38,6 @@ install:
   - replicate
   - scheduler
   - webform
-
-# Required modules
-# Note that any dependencies of the modules listed here will be installed automatically.
-#dependencies:
-#  - node
-#  - block
-#  - views
 
 themes:
   - bartik
