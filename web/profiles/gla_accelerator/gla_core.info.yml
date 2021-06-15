@@ -1,4 +1,4 @@
-name: GLA accelerator
+name: GLA core
 type: profile
 description: 'Install base and contrib modules.'
 
@@ -41,6 +41,6 @@ install:
 
 themes:
   - bartik
-  - gla_accelerator_theme
+  #- gla_accelerator_theme
 
 
