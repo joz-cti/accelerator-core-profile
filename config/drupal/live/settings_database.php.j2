@@ -1,0 +1,17 @@
+<?php
+/**
+ * database specific settings extracted into their own file so it can be included
+ * from outside of Drupal (e.g. in a custom autocomplete script).
+ */
+
+// Main database setting
+$databases['default']['default'] = [
+  'database' => '{{database_name}}',
+  'username' => '{{database_user}}',
+  'password' => '{{database_password}}',
+  'prefix' => '',
+  'host' => '{{database_host}}',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+];
