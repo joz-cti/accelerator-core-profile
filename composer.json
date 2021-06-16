@@ -1,6 +1,6 @@
 {
     "name": "gla/accelerator-core-alpha",
-    "type": "drupal-profile",
+    "type": "drupal-custom-profile",
     "license": "OGL-3.0",
     "description": "Project template for the GLA Accelerator",
     "homepage": "https://github.com/localgovdrupal/localgov_project",
