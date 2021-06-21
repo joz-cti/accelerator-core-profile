@@ -1,0 +1,47 @@
+name: Accelerator core
+type: profile
+description: 'Install base and contrib modules.'
+core_version_requirement: '^8.8 || ^9'
+
+langcode: en
+
+# Modules to install: copied from the 'minimal' profile.
+install:
+  - node
+  - views
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+
+# Modules to install: main contrib modules.
+  - access_unpublished
+  - admin_toolbar
+  - advagg
+  - bamboo_twig
+  - chosen
+  - config_filter
+  - config_ignore
+  - config_pages
+  - config_rewrite
+  - config_split
+  - content_lock
+  - entity_usage
+  - environment_indicator
+  - field_group
+  - google_tag
+  - menu_admin_per_menu
+  - metatag
+  - multiline_config
+  - paragraphs
+# Consider installing paragraphs 'helper' modules like paragraphs_library to assist development of components
+  - password_policy
+  - rabbit_hole
+  - replicate
+  - scheduler
+  - webform
+
+themes:
+  - bartik
+  - seven
+  - gla_accelerator_theme
