@@ -1,0 +1,10 @@
+uuid: b22f23b4-5e47-41a8-9a4f-f753da000c6d
+langcode: en
+status: true
+dependencies: {  }
+id: rich_text
+label: 'Rich text'
+icon_uuid: null
+icon_default: null
+description: 'Adds rich text to a page via a WYSIWYG editor'
+behavior_plugins: {  }

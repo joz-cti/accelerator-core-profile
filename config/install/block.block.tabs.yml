@@ -1,0 +1,20 @@
+uuid: 7a0b1ef8-bab7-4d78-8338-9b6554b50f27
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gla_accelerator_theme
+id: tabs
+theme: gla_accelerator_theme
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

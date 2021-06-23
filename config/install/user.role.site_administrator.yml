@@ -1,0 +1,10 @@
+uuid: 4827e154-1a31-474d-9bd0-3bc661432c88
+langcode: en
+status: true
+dependencies: {  }
+id: site_administrator
+label: 'Site Administrator'
+weight: -7
+is_admin: null
+permissions:
+  - 'use text format full_html'

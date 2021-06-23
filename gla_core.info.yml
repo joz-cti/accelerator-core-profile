@@ -20,6 +20,7 @@ install:
   - advagg
   - bamboo_twig
   - chosen
+  - ckeditor
   - config_filter
   - config_ignore
   - config_pages

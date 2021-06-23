@@ -1,0 +1,10 @@
+uuid: 586f6d3e-8561-4ff9-8614-dd2d4a6e50ec
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content Editor'
+weight: -6
+is_admin: null
+permissions:
+  - 'use text format full_html'

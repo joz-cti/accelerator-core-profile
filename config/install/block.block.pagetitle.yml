@@ -1,0 +1,18 @@
+uuid: 77e0822b-b7ae-41b7-af08-991dbbc0d956
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gla_accelerator_theme
+id: pagetitle
+theme: gla_accelerator_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: b39a53a5-5807-4844-aeeb-91e6cc17a4ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_rt_rich_text
+    - paragraphs.paragraphs_type.rich_text
+  module:
+    - text
+id: paragraph.rich_text.field_p_rt_rich_text
+field_name: field_p_rt_rich_text
+entity_type: paragraph
+bundle: rich_text
+label: 'Rich text'
+description: |-
+  <ul>
+  <li>To add an attribution to a block quote switch to the 'Source' (HTML) mode of the editor, then add a data-caption attribute with the author's name to your <code>&lt;blockquote&gt;</code> element, for example: <code>&lt;blockquote data-caption=&quot;Author name&quot;&gt;Author quote&lt;/blockquote&gt;</code></li>
+  <li>Hold down your keyboard's <code>ctrl</code>/<code>command</code>/<code>⌘</code> button to access your browser's context menu for things like spellcheck suggestions</li>
+  </ul>
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
