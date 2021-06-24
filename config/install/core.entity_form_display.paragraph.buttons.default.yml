@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.buttons.field_p_bs_items
+    - paragraphs.paragraphs_type.buttons
+  module:
+    - paragraphs
+id: paragraph.buttons.default
+targetEntityType: paragraph
+bundle: buttons
+mode: default
+content:
+  field_p_bs_items:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Button
+      title_plural: Buttons
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: button
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
