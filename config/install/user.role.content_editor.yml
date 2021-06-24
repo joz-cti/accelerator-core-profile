@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content Editor'
+weight: -6
+is_admin: null
+permissions:
+  - 'use text format full_html'
