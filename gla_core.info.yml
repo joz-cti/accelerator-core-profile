@@ -14,6 +14,7 @@ install:
   - media_library
   - page_cache
   - dynamic_page_cache
+  - responsive_image
 
 # Modules to install: main contrib modules.
   - access_unpublished

@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: media_component_16_9_lg
+label: 'Media component 16:9 (lg)'
+effects:
+  895a90aa-92cd-4c63-86cc-92143fc23f26:
+    uuid: 895a90aa-92cd-4c63-86cc-92143fc23f26
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 450
+      height: 253
+      crop_type: focal_point
+pipeline: __default__
