@@ -30,6 +30,7 @@ install:
   - entity_usage
   - environment_indicator
   - field_group
+  - field_ui
   - google_tag
   - menu_admin_per_menu
   - metatag
