@@ -11,6 +11,7 @@ install:
   - views
   - block
   - dblog
+  - media_library
   - page_cache
   - dynamic_page_cache
 
