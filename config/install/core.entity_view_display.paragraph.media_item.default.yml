@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_item.field_p_mi_display_mode
+    - field.field.paragraph.media_item.field_p_mi_link
+    - field.field.paragraph.media_item.field_p_mi_media
+    - paragraphs.paragraphs_type.media_item
+  module:
+    - entity_reference_display
+    - field_group
+third_party_settings:
+  field_group:
+    group_p_mi_link:
+      children:
+        - field_p_mi_media
+      parent_name: ''
+      weight: 0
+      format_type: link
+      format_settings:
+        target: field_p_mi_link
+        custom_uri: ''
+        target_attribute: default
+        id: ''
+        classes: u-no-underline
+      label: Link
+      region: content
+id: paragraph.media_item.default
+targetEntityType: paragraph
+bundle: media_item
+mode: default
+content:
+  field_p_mi_media:
+    type: entity_reference_display_default
+    weight: 2
+    label: hidden
+    settings:
+      display_field: ''
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_p_mi_display_mode: true
+  field_p_mi_link: true
+  search_api_excerpt: true

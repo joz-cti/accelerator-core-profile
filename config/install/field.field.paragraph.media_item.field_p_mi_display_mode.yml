@@ -1,0 +1,42 @@
+uuid: 09f6b4d4-65c9-4b4b-8343-4a65d0d7e0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_mi_display_mode
+    - paragraphs.paragraphs_type.media_item
+  module:
+    - datalayer
+    - entity_reference_display
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_mi_display_mode
+id: paragraph.media_item.field_p_mi_display_mode
+field_name: field_p_mi_display_mode
+entity_type: paragraph
+bundle: media_item
+label: 'Display mode'
+description: |-
+  <div class="item-list">
+  <ul>
+  <li>Note that these display mode options currently only apply when using the Image media type.</li>
+  <li>For best results, restrict Image media items to being 6 columns at the large, extra large, and extra extra large screen sizes using a Layout row and Layout column component. This will help keep image quality high, but loading times for your site down.</li>
+  <li>Use the 'Uncropped' option only when absolutely necessary. When Voyager is unaware of the image's aspect ratio it cannot optimise the image in the same ways as it does for the other display modes.</li>
+  </ul>
+  </div>
+required: true
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings:
+  exclude:
+    default: default
+    landscape_16_9: landscape_16_9
+    portrait_2_3: portrait_2_3
+    portrait_3_4: portrait_3_4
+    uncropped: uncropped
+  negate: 1
+field_type: entity_reference_display

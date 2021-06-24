@@ -1,0 +1,10 @@
+uuid: 1b2218d7-ec5f-4012-a3b8-43a9104b3a17
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.landscape_16_9
+label: 'Landscape (16:9)'
+targetEntityType: media
+cache: true

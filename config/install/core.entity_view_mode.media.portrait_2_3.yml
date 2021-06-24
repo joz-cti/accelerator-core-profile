@@ -1,0 +1,10 @@
+uuid: b22f81db-5f6e-4ee9-9d18-c44ff9fb92f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portrait_2_3
+label: 'Portrait (2:3)'
+targetEntityType: media
+cache: true
