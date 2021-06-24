@@ -6,7 +6,6 @@ dependencies:
     - media.type.document
     - media.type.image
     - media.type.remote_video
-    - media.type.svg
     - paragraphs.paragraphs_type.media_item
 id: paragraph.media_item.field_p_mi_media
 field_name: field_p_mi_media
@@ -25,7 +24,6 @@ settings:
       document: document
       image: image
       remote_video: remote_video
-      svg: svg
     sort:
       field: _none
     auto_create: false
