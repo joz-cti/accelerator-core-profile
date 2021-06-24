@@ -6,4 +6,5 @@ label: 'Content Editor'
 weight: -6
 is_admin: null
 permissions:
+  - 'administer permissions'
   - 'use text format full_html'
