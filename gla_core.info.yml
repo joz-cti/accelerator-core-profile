@@ -28,10 +28,12 @@ install:
   - config_rewrite
   - config_split
   - content_lock
+  - entity_reference_display
   - entity_usage
   - environment_indicator
   - field_group
   - field_ui
+  - focal_point
   - google_tag
   - menu_admin_per_menu
   - metatag

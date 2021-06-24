@@ -6,12 +6,7 @@ dependencies:
     - field.storage.paragraph.field_p_mi_display_mode
     - paragraphs.paragraphs_type.media_item
   module:
-    - datalayer
     - entity_reference_display
-third_party_settings:
-  datalayer:
-    expose: 0
-    label: field_p_mi_display_mode
 id: paragraph.media_item.field_p_mi_display_mode
 field_name: field_p_mi_display_mode
 entity_type: paragraph

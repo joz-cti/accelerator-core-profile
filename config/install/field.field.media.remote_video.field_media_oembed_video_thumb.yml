@@ -5,12 +5,7 @@ dependencies:
     - field.storage.media.field_media_oembed_video_thumb
     - media.type.remote_video
   module:
-    - datalayer
     - image
-third_party_settings:
-  datalayer:
-    expose: 0
-    label: field_media_oembed_video_thumb
 id: media.remote_video.field_media_oembed_video_thumb
 field_name: field_media_oembed_video_thumb
 entity_type: media

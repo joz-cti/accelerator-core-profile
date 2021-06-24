@@ -8,12 +8,6 @@ dependencies:
     - media.type.remote_video
     - media.type.svg
     - paragraphs.paragraphs_type.media_item
-  module:
-    - datalayer
-third_party_settings:
-  datalayer:
-    expose: 0
-    label: field_p_mi_media
 id: paragraph.media_item.field_p_mi_media
 field_name: field_p_mi_media
 entity_type: paragraph
