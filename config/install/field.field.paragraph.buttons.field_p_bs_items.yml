@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_bs_items
+    - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.buttons
+  module:
+    - entity_reference_revisions
+id: paragraph.buttons.field_p_bs_items
+field_name: field_p_bs_items
+entity_type: paragraph
+bundle: buttons
+label: Buttons
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      button: button
+    target_bundles_drag_drop:
+      button:
+        enabled: true
+        weight: 5
+      buttons:
+        weight: 4
+        enabled: false
+      rich_text:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
