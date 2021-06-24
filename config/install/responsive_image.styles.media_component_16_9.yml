@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.media_component_16_9_sm
+    - image.style.media_component_16_9_sm_2x
+id: media_component_16_9
+label: 'Media component 16:9'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: media_component_16_9_sm_2x
+breakpoint_group: responsive_image
+fallback_image_style: media_component_16_9_sm
