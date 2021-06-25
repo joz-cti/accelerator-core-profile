@@ -1,4 +1,3 @@
-uuid: 09f6b4d4-65c9-4b4b-8343-4a65d0d7e0e9
 langcode: en
 status: true
 dependencies:
@@ -24,14 +23,13 @@ required: true
 translatable: false
 default_value:
   -
-    value: default
+    value: landscape_16_9
 default_value_callback: ''
 settings:
   exclude:
-    default: default
-    landscape_16_9: landscape_16_9
-    portrait_2_3: portrait_2_3
+    landscape_4_3: landscape_4_3
     portrait_3_4: portrait_3_4
-    uncropped: uncropped
+    square_1_1: square_1_1
+    landscape_16_9: landscape_16_9
   negate: 1
 field_type: entity_reference_display
