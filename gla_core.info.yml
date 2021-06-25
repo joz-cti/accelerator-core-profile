@@ -20,6 +20,7 @@ install:
   - access_unpublished
   - admin_toolbar
   - advagg
+  - allowed_formats
   - bamboo_twig
   - chosen
   - ckeditor
@@ -29,6 +30,7 @@ install:
   - config_rewrite
   - config_split
   - content_lock
+  - datalayer
   - entity_reference_display
   - entity_usage
   - environment_indicator

@@ -2,21 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_p_bs_items
+    - field.storage.paragraph.field_p_ai_components
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
     - paragraphs.paragraphs_type.button
-    - paragraphs.paragraphs_type.buttons
   module:
     - datalayer
     - entity_reference_revisions
 third_party_settings:
   datalayer:
     expose: 0
-    label: field_p_bs_items
-id: paragraph.buttons.field_p_bs_items
-field_name: field_p_bs_items
+    label: field_p_ai_components
+id: paragraph.accordion_item.field_p_ai_components
+field_name: field_p_ai_components
 entity_type: paragraph
-bundle: buttons
-label: Buttons
+bundle: accordion_item
+label: Components
 description: ''
 required: true
 translatable: false
@@ -25,17 +26,25 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
+    negate: 1
     target_bundles:
+      accordion_item: accordion_item
       button: button
+      accordion: accordion
     target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 17
+      accordion_item:
+        enabled: true
+        weight: 14
       button:
         enabled: true
-        weight: 5
+        weight: 15
       buttons:
-        weight: 4
+        weight: 21
         enabled: false
       rich_text:
-        weight: 6
+        weight: 26
         enabled: false
 field_type: entity_reference_revisions
