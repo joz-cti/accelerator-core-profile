@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c_gc_visually_hide_title
+    - node.type.generic_content
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_c_gc_visually_hide_title
+id: node.generic_content.field_c_gc_visually_hide_title
+field_name: field_c_gc_visually_hide_title
+entity_type: node
+bundle: generic_content
+label: 'Visually hide page heading from display'
+description: 'Use this to visually hide the default heading from the top of the page if you are using a component that needs to be flush with the site header like a <em>Hero header</em>. The top level heading (H1) will still be output for accessibility and SEO purposes, but it will be invisible.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

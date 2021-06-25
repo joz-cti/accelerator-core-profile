@@ -1,0 +1,40 @@
+# Keep this at least partially in sync with
+# metatag.metatag_defaults.front.yml
+langcode: en
+status: true
+dependencies: {  }
+id: node
+label: Content
+tags:
+  canonical_url: '[node:url]'
+  content_language: '[node:langcode]'
+  description: '[node:field_teaser]'
+  image_src: '[node:field_teaser_image:entity:field_media_image:open_graph_image]'
+  og_description: '[node:field_teaser]'
+  og_image: '[node:field_teaser_image:entity:field_media_image:open_graph_image]'
+  og_image_alt: '[node:field_teaser_image:entity:field_media_image:alt]'
+  og_image_height: '[node:field_teaser_image:entity:field_media_image:open_graph_image:height]'
+  og_image_secure_url: '[node:field_teaser_image:entity:field_media_image:open_graph_image]'
+  og_image_width: '[node:field_teaser_image:entity:field_media_image:open_graph_image:width]'
+  og_locale: '[node:langcode]'
+  og_site_name: '[site:name]'
+  og_title: '[node:title]'
+  og_updated_time: '[node:changed:custom:c]'
+  og_url: '[node:url]'
+  pinterest_description: '[node:field_teaser]'
+  pinterest_media: '[node:field_teaser_image:entity:field_media_image:open_graph_image]'
+  pinterest_url: '[node:url]'
+  schema_web_page_id: '[current-page:url]'
+  schema_web_page_is_accessible_for_free: 'True'
+  schema_web_page_publisher: 'a:2:{s:5:"@type";s:12:"Organization";s:3:"@id";s:10:"[site:url]";}'
+  schema_web_page_description: '[node:field_teaser]'
+  schema_web_page_type: WebPage
+  title: '[node:title] | [site:name]'
+  twitter_cards_description: '[node:field_teaser]'
+  twitter_cards_image: '[node:field_teaser_image:entity:field_media_image:twitter_card_image]'
+  twitter_cards_image_alt: '[node:field_teaser_image:entity:field_media_image:alt]'
+  twitter_cards_image_height: '[node:field_teaser_image:entity:field_media_image:twitter_card_image:height]'
+  twitter_cards_image_width: '[node:field_teaser_image:entity:field_media_image:twitter_card_image:width]'
+  twitter_cards_page_url: '[node:url]'
+  twitter_cards_title: '[node:title]'
+  twitter_cards_type: summary

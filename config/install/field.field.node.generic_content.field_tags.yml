@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.generic_content
+    - taxonomy.vocabulary.tag
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 1
+    label: field_tags
+id: node.generic_content.field_tags
+field_name: field_tags
+entity_type: node
+bundle: generic_content
+label: Tags
+description: "Enter a comma-separated list. For example: <kbd>Amsterdam, Mexico City, London.</kbd>\r\nThese tags will be publicly visible and allow site visitors to explore related content and filter search results. \r\nYou can create new tags by typing them into the field and saving your page."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tag: tag
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Tag
+vid: tag
+description: 'Use a tag to group content on similar topics'
+weight: 0

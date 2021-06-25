@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.generic_content.field_c_gc_meta_tags
+    - field.field.node.generic_content.field_c_gc_page_components
+    - field.field.node.generic_content.field_c_gc_remove_breadcrumbs
+    - field.field.node.generic_content.field_c_gc_remove_title
+    - field.field.node.generic_content.field_c_gc_visually_hide_title
+    - field.field.node.generic_content.field_sapi_exclude
+    - field.field.node.generic_content.field_tags
+    - field.field.node.generic_content.field_teaser
+    - field.field.node.generic_content.field_teaser_image
+    - node.type.generic_content
+  module:
+    - entity_reference_revisions
+    - user
+id: node.generic_content.default
+targetEntityType: node
+bundle: generic_content
+mode: default
+content:
+  field_c_gc_page_components:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  field_c_gc_meta_tags: true
+  field_c_gc_remove_breadcrumbs: true
+  field_c_gc_remove_title: true
+  field_c_gc_visually_hide_title: true
+  field_sapi_exclude: true
+  field_tags: true
+  field_teaser: true
+  field_teaser_image: true
+  langcode: true
+  links: true
+  published_at: true
+  search_api_excerpt: true

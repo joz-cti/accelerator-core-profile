@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c_gc_page_components
+    - node.type.generic_content
+  module:
+    - datalayer
+    - entity_reference_revisions
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_c_gc_page_components
+id: node.generic_content.field_c_gc_page_components
+field_name: field_c_gc_page_components
+entity_type: node
+bundle: generic_content
+label: 'Page components'
+description: 'Build your page by arranging components.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {}
+    target_bundles_drag_drop:
+      accordion:
+        weight: -38
+        enabled: false
+      accordion_item:
+        weight: -37
+        enabled: false
+      button:
+        weight: -36
+        enabled: false
+      buttons:
+        weight: -35
+        enabled: false
+      media_item:
+        weight: -28
+        enabled: false
+      rich_text:
+        weight: -44
+        enabled: false
+field_type: entity_reference_revisions

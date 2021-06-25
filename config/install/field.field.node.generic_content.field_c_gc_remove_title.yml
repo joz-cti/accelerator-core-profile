@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c_gc_remove_title
+    - node.type.generic_content
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_c_gc_remove_title
+id: node.generic_content.field_c_gc_remove_title
+field_name: field_c_gc_remove_title
+entity_type: node
+bundle: generic_content
+label: 'Remove page heading'
+description: 'Use this to remove the default heading from the top of the page if you are providing a top level (H1) heading through a <em>Page header</em> component rather than Drupal''s default page title output. This prevents duplicate <code>h1</code> tags on the page, which is bad for accessibility and SEO.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

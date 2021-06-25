@@ -10,9 +10,11 @@ install:
   - node
   - views
   - block
+  - content_moderation
   - dblog
   - media_library
   - page_cache
+  - path
   - dynamic_page_cache
   - responsive_image
 
@@ -42,11 +44,13 @@ install:
   - metatag
   - multiline_config
   - paragraphs
-# Consider installing paragraphs 'helper' modules like paragraphs_library to assist development of components
+  - publication_date
   - password_policy
   - rabbit_hole
   - replicate
   - scheduler
+  - search_api_exclude_entity
+  - select2
   - webform
 
 themes:

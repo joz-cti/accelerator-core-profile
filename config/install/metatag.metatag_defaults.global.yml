@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies: {  }
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'
+  content_language: '[node:langcode]'
+  robots: 'index, follow'
+  canonical_url: '[current-page:url]'
+  og_url: '[current-page:url]'
+  og_site_name: '[site:name]'
+  twitter_cards_type: summary
+  schema_organization_logo: 'a:2:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:50:"[site:url]themes/custom/rutherford/images/logo.png";}'
+  schema_organization_id: '[site:url]'
+  schema_organization_url: '[site:url]'
+  schema_organization_same_as: '[config_page:footer_social_links:field_cp_fsl_platforms:0:entity:field_p_fslp_link:uri],[config_page:footer_social_links:field_cp_fsl_platforms:1:entity:field_p_fslp_link:uri],[config_page:footer_social_links:field_cp_fsl_platforms:2:entity:field_p_fslp_link:uri],[config_page:footer_social_links:field_cp_fsl_platforms:3:entity:field_p_fslp_link:uri],[config_page:footer_social_links:field_cp_fsl_platforms:4:entity:field_p_fslp_link:uri],[config_page:footer_social_links:field_cp_fsl_platforms:5:entity:field_p_fslp_link:uri],[config_page:footer_social_links:field_cp_fsl_platforms:6:entity:field_p_fslp_link:uri],[config_page:footer_social_links:field_cp_fsl_platforms:7:entity:field_p_fslp_link:uri]'
+  schema_organization_name: '[site:name]'
+  schema_organization_type: Organization
+  schema_web_site_url: '[site:url]'
+  schema_web_site_publisher: 'a:2:{s:5:"@type";s:12:"Organization";s:3:"@id";s:10:"[site:url]";}'
+  schema_web_site_potential_action: 'a:4:{s:5:"@type";s:12:"SearchAction";s:5:"query";s:43:"[site:url]search?query={search_term_string}";s:11:"query-input";s:32:"required name=search_term_string";s:6:"target";a:2:{s:5:"@type";s:10:"EntryPoint";s:11:"urlTemplate";s:43:"[site:url]search?query={search_term_string}";}}'
+  schema_web_site_type: WebSite
+  schema_web_site_id: '[site:url]'
+  schema_web_site_name: '[site:name]'
+  twitter_cards_donottrack: 'on'
