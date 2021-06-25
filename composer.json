@@ -40,6 +40,7 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/environment_indicator": "^4.0",
         "drupal/field_group": "^3.1",
+        "drupal/field_group_link": "^3.0@RC",
         "drupal/focal_point": "^1.5",
         "drupal/google_tag": "^1.4",
         "drupal/menu_admin_per_menu": "^1.3",
