@@ -5,7 +5,12 @@ dependencies:
     - field.storage.media.field_media_video_file
     - media.type.video
   module:
+    - datalayer
     - file
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_media_video_file
 id: media.video.field_media_video_file
 field_name: field_media_video_file
 entity_type: media

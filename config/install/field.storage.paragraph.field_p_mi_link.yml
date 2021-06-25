@@ -2,8 +2,12 @@ langcode: en
 status: true
 dependencies:
   module:
+    - datalayer
     - link
-    - paragraphs
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_mi_link
 id: paragraph.field_p_mi_link
 field_name: field_p_mi_link
 entity_type: paragraph

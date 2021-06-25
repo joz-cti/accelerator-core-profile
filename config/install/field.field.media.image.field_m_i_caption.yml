@@ -4,6 +4,12 @@ dependencies:
   config:
     - field.storage.media.field_m_i_caption
     - media.type.image
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_m_i_caption
 id: media.image.field_m_i_caption
 field_name: field_m_i_caption
 entity_type: media
