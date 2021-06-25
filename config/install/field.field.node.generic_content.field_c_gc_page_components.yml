@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_c_gc_page_components
     - node.type.generic_content
+    - paragraphs.paragraphs_type.accordion_item
+    - paragraphs.paragraphs_type.button
   module:
     - datalayer
     - entity_reference_revisions
@@ -24,18 +26,20 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
-    target_bundles: {}
+    negate: 1
+    target_bundles:
+      accordion_item: accordion_item
+      button: button
     target_bundles_drag_drop:
       accordion:
         weight: -38
         enabled: false
       accordion_item:
+        enabled: true
         weight: -37
-        enabled: false
       button:
+        enabled: true
         weight: -36
-        enabled: false
       buttons:
         weight: -35
         enabled: false
