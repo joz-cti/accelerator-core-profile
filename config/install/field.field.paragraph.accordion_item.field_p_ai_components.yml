@@ -3,9 +3,9 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_p_ai_components
+    - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.accordion_item
-    - paragraphs.paragraphs_type.buttons
-    - paragraphs.paragraphs_type.rich_text
+    - paragraphs.paragraphs_type.button
   module:
     - datalayer
     - entity_reference_revisions
@@ -26,25 +26,25 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
+    negate: 1
     target_bundles:
-      buttons: buttons
-      rich_text: rich_text
-      html_widget: html_widget
+      accordion_item: accordion_item
+      button: button
+      accordion: accordion
     target_bundles_drag_drop:
       accordion:
+        enabled: true
         weight: 17
-        enabled: false
       accordion_item:
+        enabled: true
         weight: 14
-        enabled: false
       button:
+        enabled: true
         weight: 15
-        enabled: false
       buttons:
-        enabled: true
         weight: 21
+        enabled: false
       rich_text:
-        enabled: true
         weight: 26
+        enabled: false
 field_type: entity_reference_revisions

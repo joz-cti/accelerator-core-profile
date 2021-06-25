@@ -16,8 +16,8 @@ content:
     type: paragraphs
     weight: 1
     settings:
-      title: Component
-      title_plural: Components
+      title: Item
+      title_plural: Items
       edit_mode: closed
       closed_mode: summary
       autocollapse: none

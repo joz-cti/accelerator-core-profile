@@ -38,6 +38,9 @@ settings:
       button:
         weight: 17
         enabled: false
+      buttons:
+        weight: 9
+        enabled: false
       rich_text:
         weight: 28
         enabled: false
