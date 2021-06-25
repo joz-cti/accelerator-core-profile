@@ -4,6 +4,12 @@ dependencies:
   config:
     - field.storage.paragraph.field_p_b_icon
     - paragraphs.paragraphs_type.button
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_b_icon
 id: paragraph.button.field_p_b_icon
 field_name: field_p_b_icon
 entity_type: paragraph

@@ -5,7 +5,16 @@ dependencies:
     - field.storage.paragraph.field_p_rt_rich_text
     - paragraphs.paragraphs_type.rich_text
   module:
+    - allowed_formats
+    - datalayer
     - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    plain_text: '0'
+  datalayer:
+    expose: 0
+    label: field_p_rt_rich_text
 id: paragraph.rich_text.field_p_rt_rich_text
 field_name: field_p_rt_rich_text
 entity_type: paragraph

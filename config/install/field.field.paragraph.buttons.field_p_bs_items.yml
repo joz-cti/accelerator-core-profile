@@ -6,7 +6,12 @@ dependencies:
     - paragraphs.paragraphs_type.button
     - paragraphs.paragraphs_type.buttons
   module:
+    - datalayer
     - entity_reference_revisions
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_bs_items
 id: paragraph.buttons.field_p_bs_items
 field_name: field_p_bs_items
 entity_type: paragraph

@@ -7,7 +7,12 @@ dependencies:
     - paragraphs.paragraphs_type.buttons
     - paragraphs.paragraphs_type.rich_text
   module:
+    - datalayer
     - entity_reference_revisions
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_ai_components
 id: paragraph.accordion_item.field_p_ai_components
 field_name: field_p_ai_components
 entity_type: paragraph
