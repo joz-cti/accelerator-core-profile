@@ -17,6 +17,7 @@ install:
   - path
   - dynamic_page_cache
   - responsive_image
+  - taxonomy
 
 # Modules to install: main contrib modules.
   - access_unpublished
