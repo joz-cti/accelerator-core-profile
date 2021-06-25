@@ -6,6 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.accordion_item
     - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.media_item
   module:
     - datalayer
     - entity_reference_revisions
@@ -43,6 +44,9 @@ settings:
         weight: 15
       buttons:
         weight: 21
+        enabled: false
+      media_item:
+        weight: 11
         enabled: false
       rich_text:
         weight: 26
