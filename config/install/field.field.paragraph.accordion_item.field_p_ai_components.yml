@@ -5,7 +5,6 @@ dependencies:
     - field.storage.paragraph.field_p_ai_components
     - paragraphs.paragraphs_type.accordion_item
     - paragraphs.paragraphs_type.buttons
-    - paragraphs.paragraphs_type.media_item
     - paragraphs.paragraphs_type.rich_text
   module:
     - entity_reference_revisions
