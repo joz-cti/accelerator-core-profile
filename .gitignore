@@ -18,3 +18,7 @@ web/sites/*/files
 # Ignore files managed by the Drupal scaffolding Composer plugin.
 /.editorconfig
 /.gitattributes
+
+# Ignore files that will be symlinks.
+web/sites/*/settings.local.php
+web/sites/services.local.yml
