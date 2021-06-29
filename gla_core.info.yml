@@ -39,4 +39,5 @@ install:
 
 themes:
   - seven
+  - bartik
   - gla_accelerator_theme
