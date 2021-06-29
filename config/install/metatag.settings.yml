@@ -1,0 +1,6 @@
+entity_type_groups:
+  node:
+    generic_content:
+      basic: basic
+      advanced: advanced
+      site_verification: site_verification

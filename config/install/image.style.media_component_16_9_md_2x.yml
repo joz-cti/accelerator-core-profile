@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: media_component_16_9_md_2x
+label: 'Media component 16:9 (md, 2x)'
+effects:
+  6f2da9e1-c9fb-455f-b143-2b1a771f5c58:
+    uuid: 6f2da9e1-c9fb-455f-b143-2b1a771f5c58
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1380
+      height: 778
+      crop_type: focal_point
+pipeline: __default__

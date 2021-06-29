@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c_gc_remove_breadcrumbs
+    - node.type.generic_content
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_c_gc_remove_breadcrumbs
+id: node.generic_content.field_c_gc_remove_breadcrumbs
+field_name: field_c_gc_remove_breadcrumbs
+entity_type: node
+bundle: generic_content
+label: 'Remove breadcrumbs'
+description: 'This is useful for landing pages where you might not want the breadcrumbs to display above a component that needs to be flush with the site header.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

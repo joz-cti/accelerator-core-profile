@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sapi_exclude
+    - node.type.generic_content
+  module:
+    - datalayer
+    - search_api_exclude_entity
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_sapi_exclude
+id: node.generic_content.field_sapi_exclude
+field_name: field_sapi_exclude
+entity_type: node
+bundle: generic_content
+label: 'Exclude from site search'
+description: 'Exclude this page from the [site:name] site search. Note that this won''t have any effect on external search engines such as Google. To exclude content from external search engines, use the <code>noindex</code> metatag.'
+required: false
+translatable: false
+default_value:
+  -
+    value: false
+default_value_callback: ''
+settings: {  }
+field_type: search_api_exclude_entity

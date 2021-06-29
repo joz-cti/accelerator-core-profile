@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_item.field_p_mi_display_mode
+    - field.field.paragraph.media_item.field_p_mi_link
+    - field.field.paragraph.media_item.field_p_mi_media
+    - paragraphs.paragraphs_type.media_item
+  module:
+    - link
+    - media_library
+id: paragraph.media_item.default
+targetEntityType: paragraph
+bundle: media_item
+mode: default
+content:
+  field_p_mi_display_mode:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_p_mi_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_p_mi_media:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types:
+        - image
+        - document
+        - remote_video
+        - video
+        - audio
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

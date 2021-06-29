@@ -5,7 +5,14 @@ dependencies:
     - field.storage.paragraph.field_p_rt_rich_text
     - paragraphs.paragraphs_type.rich_text
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: full_html
+    restricted_html: restricted_html
+    plain_text: '0'
 id: paragraph.rich_text.field_p_rt_rich_text
 field_name: field_p_rt_rich_text
 entity_type: paragraph

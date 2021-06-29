@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: media_component_3_4_xxl
+label: 'Media component 3:4 (xxl)'
+effects:
+  ee243640-a6e5-4f2f-8fa4-a3e3710a0638:
+    uuid: ee243640-a6e5-4f2f-8fa4-a3e3710a0638
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 690
+      height: 920
+      crop_type: focal_point
+pipeline: __default__

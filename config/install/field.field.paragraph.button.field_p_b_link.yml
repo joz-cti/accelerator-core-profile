@@ -5,7 +5,12 @@ dependencies:
     - field.storage.paragraph.field_p_b_link
     - paragraphs.paragraphs_type.button
   module:
+    - datalayer
     - link
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_b_link
 id: paragraph.button.field_p_b_link
 field_name: field_p_b_link
 entity_type: paragraph

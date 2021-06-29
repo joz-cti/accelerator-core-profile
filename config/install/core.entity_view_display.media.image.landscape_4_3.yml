@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.landscape_4_3
+    - field.field.media.image.field_m_i_caption
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - image
+id: media.image.landscape_4_3
+targetEntityType: media
+bundle: image
+mode: landscape_4_3
+content:
+  field_media_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_m_i_caption: true
+  name: true
+  thumbnail: true
+  uid: true

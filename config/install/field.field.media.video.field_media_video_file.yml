@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_video_file
+    - media.type.video
+  module:
+    - datalayer
+    - file
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_media_video_file
+id: media.video.field_media_video_file
+field_name: field_media_video_file
+entity_type: media
+bundle: video
+label: 'Video file'
+description: 'For the widest browser support, add multiple formats of the same video, we recommend using a combination of <code>webm</code> and <code>mp4</code>. For <code>mp4</code> use the <code>H264</code> video codec and <code>AAC</code> or audio codec. For the best page load speed, order the videos with the smallest (in file size) one first, and the largest one last - usually WebM is the smallest. You can ask the person or organisation that created your videos to provide them as web optimised MP4 and WebM files with a max resolution of 720x480 and no audio track, or use a tool like <a href="https://handbrake.fr">Handbrake</a> to convert the videos yourself.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'video/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp4 webm ogv'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

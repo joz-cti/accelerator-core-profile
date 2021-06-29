@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_m_i_caption
+    - media.type.image
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_m_i_caption
+id: media.image.field_m_i_caption
+field_name: field_m_i_caption
+entity_type: media
+bundle: image
+label: Caption
+description: 'Enter a caption or a photographer/artist credit.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
