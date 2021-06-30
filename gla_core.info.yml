@@ -40,7 +40,6 @@ install:
   - field_group_link
   - field_ui
   - focal_point
-  - gla_cta
   - google_tag
   - menu_admin_per_menu
   - metatag
