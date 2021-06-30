@@ -20,7 +20,7 @@ function gla_core_field_widget_paragraphs_form_alter(&$element, FormStateInterfa
         $name .= '][field_p_c_type]';
         $element['subform']['field_p_c_image']['#states'] = [
           'visible' => [
-            ':input[name="' . $name . '"]' => 'image',
+            ':input[name="' . $name . '"]' => ['value' => 'image'],
           ],
         ];
       }
