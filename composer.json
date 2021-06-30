@@ -110,9 +110,14 @@
                 }
             }
         },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset",
+            "drupal-cti-module",
+            "ckeditor-plugin"
+        ],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
@@ -121,7 +126,7 @@
             "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
             "web/libraries/chosen": ["npm-asset/chosen-js"],
-            "www/libraries/{$name}": [
+            "web/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset",
