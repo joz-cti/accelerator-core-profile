@@ -17,7 +17,7 @@
     "require": {
         "composer/installers": "^1.10",
         "cweagans/composer-patches": "~1.0",
-        "gla/accelerator-theme": "dev-feature/DERP-344-gla-accelerator-modularization",
+        "gla/accelerator-theme": "^1.0",
         "drupal/access_unpublished": "^1.2",
         "drupal/admin_toolbar": "^3.0",
         "drupal/advagg": "^4.1",
