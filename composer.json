@@ -60,6 +60,7 @@
         "drupal/webform": "^6.0",
         "drupal/whoops": "dev-3185130-d9-compatibility as 1.0",
         "drush/drush": "^10",
+        "npm-asset/chosen-js": "^1.8",
         "vlucas/phpdotenv": "^5.1"
     },
     "require-dev": {
@@ -119,7 +120,13 @@
             "web/modules/custom/{$name}": ["type:drupal-custom-module"],
             "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "web/libraries/chosen": ["npm-asset/chosen-js"]
+            "web/libraries/chosen": ["npm-asset/chosen-js"],
+            "www/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset",
+                "type:ckeditor-plugin"
+            ]
         },
         "patches": {
             "drupal/core": {
