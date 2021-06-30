@@ -61,6 +61,7 @@
         "drupal/whoops": "dev-3185130-d9-compatibility as 1.0",
         "drush/drush": "^10",
         "npm-asset/chosen-js": "^1.8",
+        "npm-asset/select2": "^4.0",
         "vlucas/phpdotenv": "^5.1"
     },
     "require-dev": {
