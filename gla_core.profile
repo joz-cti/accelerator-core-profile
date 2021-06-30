@@ -5,9 +5,25 @@
  * Code and configuration relating to the Core profile.
  */
 
+use Drupal\Core\Form\FormStateInterface;
+
 /**
- * Implements hook_field_widget_form_alter().
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
  */
-function gla_core_field_widget_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
-  
+function gla_core_field_widget_paragraphs_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if ($element['#paragraph_type'] == 'cta') {
+    if (isset($element['subform']['field_p_c_image'])) {
+      if (!empty($element['subform']['#parents'])) {
+        $parents = $element['subform']['#parents'];
+        $name = array_shift($parents) . '[';
+        $name .= implode('][', $parents);
+        $name .= '][field_p_c_type]';
+        $element['subform']['field_p_c_image']['#states'] = [
+          'visible' => [
+            ':input[name="' . $name . '"]' => 'image',
+          ],
+        ];
+      }
+    }
+  }
 }
