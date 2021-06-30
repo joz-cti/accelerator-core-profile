@@ -7,6 +7,10 @@
     "repositories": [
         {
             "type": "composer",
+            "url": "https://repo.packagist.com/greaterlondonauthori/"
+        },
+        {
+            "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
         {
