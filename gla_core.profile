@@ -11,6 +11,8 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements hook_field_widget_WIDGET_TYPE_form_alter().
  */
 function gla_core_field_widget_paragraphs_form_alter(&$element, FormStateInterface $form_state, $context) {
+
+  // Use Drupal States to hide the image field if the CTA type is not image.
   if ($element['#paragraph_type'] == 'cta') {
     if (isset($element['subform']['field_p_c_image'])) {
       if (!empty($element['subform']['#parents'])) {
