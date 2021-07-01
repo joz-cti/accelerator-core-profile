@@ -1,11 +1,8 @@
 name: Accelerator core
 type: profile
-description: 'Install base and contrib modules.'
-core_version_requirement: '^8.8 || ^9'
-
+description: 'Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate'
+core_version_requirement: '^9'
 langcode: en
-
-# Modules to install: copied from the 'minimal' profile.
 install:
   - node
   - views
@@ -18,8 +15,6 @@ install:
   - dynamic_page_cache
   - responsive_image
   - taxonomy
-
-# Modules to install: main contrib modules.
   - access_unpublished
   - admin_toolbar
   - advagg
@@ -55,6 +50,6 @@ install:
   - webform
 
 themes:
-  - bartik
   - seven
+  - bartik
   - gla_accelerator_theme
