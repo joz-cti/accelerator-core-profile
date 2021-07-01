@@ -1,0 +1,16 @@
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Production
+description: 'Modules and configuration for the production environment.'
+folder: ../config/splits/prod
+module:
+  google_tag: 0
+  syslog: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

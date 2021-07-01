@@ -1,0 +1,15 @@
+langcode: en
+status: false
+dependencies: {  }
+id: non_prod
+label: Non-Production
+description: 'Modules and configuration for the Non-Production environments.'
+folder: ../config/splits/non-prod
+module:
+  dblog: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
