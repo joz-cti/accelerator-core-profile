@@ -7,12 +7,18 @@ install:
   - node
   - views
   - block
+  - content_moderation
   - dblog
+  - media_library
   - page_cache
+  - path
   - dynamic_page_cache
+  - responsive_image
+  - taxonomy
   - access_unpublished
   - admin_toolbar
   - advagg
+  - allowed_formats
   - bamboo_twig
   - chosen
   - ckeditor
@@ -22,19 +28,25 @@ install:
   - config_rewrite
   - config_split
   - content_lock
+  - datalayer
+  - entity_reference_display
   - entity_usage
   - environment_indicator
-  - field_group
+  - field_group_link
   - field_ui
+  - focal_point
   - google_tag
   - menu_admin_per_menu
   - metatag
   - multiline_config
   - paragraphs
+  - publication_date
   - password_policy
   - rabbit_hole
   - replicate
   - scheduler
+  - search_api_exclude_entity
+  - select2
   - webform
 
 themes:

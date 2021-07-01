@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_mi_media
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.media_item
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_mi_media
+id: paragraph.field_p_mi_media
+field_name: field_p_mi_media
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_t_facets_exclude
+    - taxonomy.vocabulary.tag
+  module:
+    - datalayer
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_t_facets_exclude
+id: taxonomy_term.tag.field_t_facets_exclude
+field_name: field_t_facets_exclude
+entity_type: taxonomy_term
+bundle: tag
+label: 'Exclude from site search filters'
+description: 'Exclude this term from appearing in the filters on the site search'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

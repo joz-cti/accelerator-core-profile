@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: media_component_3_4_lg
+label: 'Media component 3:4 (lg)'
+effects:
+  3a2092ad-23ea-4f6c-9f0e-d9e38a460a56:
+    uuid: 3a2092ad-23ea-4f6c-9f0e-d9e38a460a56
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 450
+      height: 600
+      crop_type: focal_point
+pipeline: __default__

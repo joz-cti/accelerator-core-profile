@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.standard_player
+label: 'Standard player'
+targetEntityType: media
+cache: true

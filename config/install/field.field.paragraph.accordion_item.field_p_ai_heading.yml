@@ -2,21 +2,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_p_b_icon
-    - paragraphs.paragraphs_type.button
+    - field.storage.paragraph.field_p_ai_heading
+    - paragraphs.paragraphs_type.accordion_item
   module:
     - datalayer
 third_party_settings:
   datalayer:
     expose: 0
-    label: field_p_b_icon
-id: paragraph.button.field_p_b_icon
-field_name: field_p_b_icon
+    label: field_p_ai_heading
+id: paragraph.accordion_item.field_p_ai_heading
+field_name: field_p_ai_heading
 entity_type: paragraph
-bundle: button
-label: Icon
+bundle: accordion_item
+label: Heading
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

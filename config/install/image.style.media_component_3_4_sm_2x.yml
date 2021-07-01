@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: media_component_3_4_sm_2x
+label: 'Media component 3:4 (sm, 2x)'
+effects:
+  2febe0b6-2f9b-4cf6-affc-98cead7bafee:
+    uuid: 2febe0b6-2f9b-4cf6-affc-98cead7bafee
+    id: focal_point_scale_and_crop
+    weight: 0
+    data:
+      width: 1020
+      height: 1360
+      crop_type: focal_point
+pipeline: __default__
