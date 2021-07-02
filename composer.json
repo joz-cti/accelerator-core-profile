@@ -2,13 +2,12 @@
     "name": "gla/accelerator-core-alpha",
     "type": "drupal-custom-profile",
     "license": "OGL-3.0",
-    "description": "Project template for the GLA Accelerator",
+    "description": "Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
     "homepage": "https://github.com/GreaterLondonAuthority/accelerator-core-alpha",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/issue/whoops-3185130",
-            "comment": "Added as workaround until there is a D9 version of Whoops"
+            "type": "composer",
+            "url": "https://repo.packagist.com/greaterlondonauthori/"
         },
         {
             "type": "composer",
@@ -22,6 +21,7 @@
     "require": {
         "composer/installers": "^1.10",
         "cweagans/composer-patches": "~1.0",
+        "gla/accelerator-theme": "^1.0",
         "drupal/access_unpublished": "^1.2",
         "drupal/admin_toolbar": "^3.0",
         "drupal/advagg": "^4.1",
@@ -58,21 +58,11 @@
         "drupal/search_api_exclude_entity": "^1.3",
         "drupal/select2": "^1.13",
         "drupal/webform": "^6.0",
-        "drupal/whoops": "dev-3185130-d9-compatibility as 1.0",
         "drush/drush": "^10",
-        "npm-asset/chosen-js": "^1.8",
-        "npm-asset/select2": "^4.0",
-        "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.1"
     },
     "require-dev": {
-        "drupal/core-dev": "^9.1",
-        "drupal/coder": "^8.3",
-        "squizlabs/php_codesniffer": "^3.6",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-        "drupal/devel": "^4.1",
-        "topfloor/composer-cleanup-vcs-dirs": "dev-composer-2",
-        "kint-php/kint": "^3.3"
+        "drupal/core-dev": "^9.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -82,59 +72,9 @@
     "config": {
         "sort-packages": true
     },
-    "scripts": {
-        "post-create-project-cmd": [
-            "mv -f README-once-project-created.md README.md"
-        ]
-    },
     "extra": {
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
-        "drupal-scaffold": {
-            "allowed-packages": [
-                "drupal/core"
-            ],
-            "locations": {
-                "web-root": "web/"
-            },
-            "file-mapping": {
-                "[web-root]/web.config": false,
-                "[web-root]/.htaccess": false,
-                "[web-root]/sites/development.services.yml": false,
-                "[web-root]/sites/default/settings.php": {
-                    "force-append": true,
-                    "append": "assets/composer/append-to-settings.txt"
-                },
-                "[web-root]/sites/default/settings.overrides.php": {
-                    "mode": "replace",
-                    "path": "assets/composer/settings.overrides.php",
-                    "overwrite": false
-                }
-            }
-        },
-        "installer-types": [
-            "bower-asset",
-            "npm-asset",
-            "drupal-cti-module",
-            "ckeditor-plugin"
-        ],
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "web/libraries/chosen": ["npm-asset/chosen-js"],
-            "web/libraries/{$name}": [
-                "type:drupal-library",
-                "type:bower-asset",
-                "type:npm-asset",
-                "type:ckeditor-plugin"
-            ]
-        },
         "patches": {
             "drupal/core": {
                 "Notice: Undefined index: #type in drupal_process_states()": "https://www.drupal.org/files/issues/2019-12-05/2700667-89.patch",
@@ -149,9 +89,6 @@
                 "Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-05-09/2924549-30.patch",
                 "Allow tokens for url of the Link field": "https://www.drupal.org/files/issues/2020-04-22/core_2903336-33_allow-tokens-in-link-url.patch",
                 "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch"
-            },
-            "drupal/devel": {
-                "Brings back the Available Methods & Properties tabs for Kint dumps — Issue #221": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kint.patch"
             }
         }
     }
