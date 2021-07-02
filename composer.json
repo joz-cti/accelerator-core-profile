@@ -21,7 +21,6 @@
     "require": {
         "composer/installers": "^1.10",
         "cweagans/composer-patches": "~1.0",
-        "gla/accelerator-theme": "^1.0",
         "drupal/access_unpublished": "^1.2",
         "drupal/admin_toolbar": "^3.0",
         "drupal/advagg": "^4.1",
@@ -59,6 +58,9 @@
         "drupal/select2": "^1.13",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
+        "gla/accelerator-theme": "^1.0",
+        "npm-asset/chosen-js": "^1.8",
+        "npm-asset/select2": "^4.0",
         "vlucas/phpdotenv": "^5.1"
     },
     "require-dev": {
