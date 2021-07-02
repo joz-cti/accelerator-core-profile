@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2506bfb24e3bd6d4923dddbe8585633",
+    "content-hash": "148d81958758c268d29ecda46c8a0dbf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2515,62 +2515,6 @@
                 "source": "https://github.com/drupal/core/tree/9.2.0"
             },
             "time": "2021-06-16T12:31:16+00:00"
-        },
-        {
-            "name": "drupal/core-composer-scaffold",
-            "version": "9.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/7b125516d6568b888945ee03ac2636dcced76e8d",
-                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/greaterlondonauthori/dists/%package%/%version%/r%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "composer-plugin-api": "^1 || ^2",
-                "php": ">=7.3.0"
-            },
-            "conflict": {
-                "drupal-composer/drupal-scaffold": "*"
-            },
-            "require-dev": {
-                "composer/composer": "^1.8@stable"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Drupal\\Composer\\Plugin\\Scaffold\\Plugin",
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\Composer\\Plugin\\Scaffold\\": ""
-                }
-            },
-            "notification-url": "https://repo.packagist.com/greaterlondonauthori/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "A flexible Composer project scaffold builder.",
-            "homepage": "https://www.drupal.org/project/drupal",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.2.0"
-            },
-            "time": "2020-08-07T22:30:13+00:00"
         },
         {
             "name": "drupal/core-project-message",
