@@ -1,6 +1,6 @@
 {
     "name": "gla/accelerator-core-alpha",
-    "type": "drupal-custom-profile",
+    "type": "drupal-profile",
     "license": "OGL-3.0",
     "description": "Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
     "homepage": "https://github.com/GreaterLondonAuthority/accelerator-core-alpha",
