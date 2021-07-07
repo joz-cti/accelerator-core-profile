@@ -1,6 +1,6 @@
 {
     "name": "gla/accelerator-core-alpha",
-    "type": "drupal-custom-profile",
+    "type": "drupal-profile",
     "license": "OGL-3.0",
     "description": "Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
     "homepage": "https://github.com/GreaterLondonAuthority/accelerator-core-alpha",
@@ -21,7 +21,6 @@
     "require": {
         "composer/installers": "^1.10",
         "cweagans/composer-patches": "~1.0",
-        "gla/accelerator-theme": "^1.0",
         "drupal/access_unpublished": "^1.2",
         "drupal/admin_toolbar": "^3.0",
         "drupal/advagg": "^4.1",
@@ -34,7 +33,6 @@
         "drupal/config_rewrite": "^1.4",
         "drupal/config_split": "^2.0@beta",
         "drupal/content_lock": "^2.2",
-        "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/datalayer": "^1.0@beta",
@@ -59,6 +57,9 @@
         "drupal/select2": "^1.13",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
+        "gla/accelerator-theme": "^1.0",
+        "npm-asset/chosen-js": "^1.8",
+        "npm-asset/select2": "^4.0",
         "vlucas/phpdotenv": "^5.1"
     },
     "require-dev": {
