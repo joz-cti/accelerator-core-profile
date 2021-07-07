@@ -4,9 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - seven
-id: seven_content
-theme: seven
+    - claro
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: claro_content
+theme: claro
 region: content
 weight: 0
 provider: null

@@ -2,9 +2,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - seven
-id: seven_page_title
-theme: seven
+    - claro
+_core:
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
+id: claro_page_title
+theme: claro
 region: header
 weight: -30
 provider: null
