@@ -1,0 +1,21 @@
+langcode: en
+status: false
+dependencies: {  }
+id: development
+label: Development
+description: 'Development related modules and configuration.'
+folder: ../config/splits/development
+module:
+  devel: 0
+  environment_indicator_ui: 0
+  field_ui: 0
+  views_ui: 0
+  webform_devel: 0
+  webform_ui: 0
+  whoops: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
