@@ -17,6 +17,9 @@ install:
   - taxonomy
   - access_unpublished
   - admin_toolbar
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_search
+  - admin_toolbar_tools
   - advagg
   - allowed_formats
   - bamboo_twig
@@ -30,7 +33,7 @@ install:
   - content_lock
   - datalayer
   - entity_reference_display
-  - entity_usage
+  - entity_usagea
   - environment_indicator
   - field_group_link
   - field_ui
