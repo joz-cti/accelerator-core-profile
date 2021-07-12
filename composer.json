@@ -1,23 +1,9 @@
 {
     "name": "gla/accelerator-core-alpha",
     "type": "drupal-profile",
-    "license": "OGL-3.0",
     "description": "Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
     "homepage": "https://github.com/GreaterLondonAuthority/accelerator-core-alpha",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://repo.packagist.com/greaterlondonauthori/"
-        },
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
+    "license": "OGL-3.0",
     "require": {
         "composer/installers": "^1.10",
         "cweagans/composer-patches": "~1.0",
@@ -62,14 +48,14 @@
         "npm-asset/select2": "^4.0",
         "vlucas/phpdotenv": "^5.1"
     },
-    "require-dev": {
-        "drupal/core-dev": "^9.1"
-    },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "require-dev": {
+        "drupal/coder": "^8.3",
+        "drupal/core-dev": "^9.1",
+        "vijaycs85/drupal-quality-checker": "^1.5"
+    },
     "config": {
         "sort-packages": true
     },
@@ -78,19 +64,35 @@
         "enable-patching": true,
         "patches": {
             "drupal/core": {
-                "Notice: Undefined index: #type in drupal_process_states()": "https://www.drupal.org/files/issues/2019-12-05/2700667-89.patch",
-                "Install Profile fails if Module depends on Theme": "https://www.drupal.org/files/issues/2018-12-19/0001-Attempt-to-install-a-theme-before-throwing-an-except.patch",
-                "Provide option to set ajax indicator with .use-ajax and .use-ajax-submit": "https://www.drupal.org/files/issues/2020-12-16/2818463-15.patch",
+                "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
                 "Add a hook to modify oEmbed resource data": "https://www.drupal.org/files/issues/2021-06-17/3042423-32.patch",
-                "Drupal.ajax does not guarantee that 'add new JS file to page' commands have finished before calling said JS": "https://www.drupal.org/files/issues/2021-06-07/1988968-236.patch",
-                "Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
-                "[PP-1] JSON:API is typehinting LatestRevisionCheck because there is no Entity Revision Access API yet, remove that typehint once such an API exists": "https://www.drupal.org/files/issues/2019-10-21/LatestRevisionCheck-13092187-24.patch",
-                "State required asterisk doesn't show": "https://www.drupal.org/files/issues/2021-02-01/2912092-34.patch",
-                "Can only intentionally re-render an entity with references 20 times": "https://www.drupal.org/files/issues/2019-12-04/drupal-entity_re-rendering_limited-2940605-19.patch",
-                "Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-05-09/2924549-30.patch",
                 "Allow tokens for url of the Link field": "https://www.drupal.org/files/issues/2020-04-22/core_2903336-33_allow-tokens-in-link-url.patch",
-                "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch"
+                "Can only intentionally re-render an entity with references 20 times": "https://www.drupal.org/files/issues/2019-12-04/drupal-entity_re-rendering_limited-2940605-19.patch",
+                "Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
+                "Drupal.ajax does not guarantee that 'add new JS file to page' commands have finished before calling said JS": "https://www.drupal.org/files/issues/2021-06-07/1988968-236.patch",
+                "Install Profile fails if Module depends on Theme": "https://www.drupal.org/files/issues/2018-12-19/0001-Attempt-to-install-a-theme-before-throwing-an-except.patch",
+                "Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-05-09/2924549-30.patch",
+                "Notice: Undefined index: #type in drupal_process_states()": "https://www.drupal.org/files/issues/2019-12-05/2700667-89.patch",
+                "Provide option to set ajax indicator with .use-ajax and .use-ajax-submit": "https://www.drupal.org/files/issues/2020-12-16/2818463-15.patch",
+                "State required asterisk doesn't show": "https://www.drupal.org/files/issues/2021-02-01/2912092-34.patch",
+                "[PP-1] JSON:API is typehinting LatestRevisionCheck because there is no Entity Revision Access API yet, remove that typehint once such an API exists": "https://www.drupal.org/files/issues/2019-10-21/LatestRevisionCheck-13092187-24.patch"
             }
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.packagist.com/greaterlondonauthori/"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
