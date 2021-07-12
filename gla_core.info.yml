@@ -33,7 +33,7 @@ install:
   - content_lock
   - datalayer
   - entity_reference_display
-  - entity_usagea
+  - entity_usage
   - environment_indicator
   - field_group_link
   - field_ui
