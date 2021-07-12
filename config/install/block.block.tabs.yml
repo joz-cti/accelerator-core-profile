@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - gla_accelerator_theme
+    - gla_core_theme
 id: tabs
-theme: gla_accelerator_theme
+theme: gla_core_theme
 region: content
 weight: -1
 provider: null
