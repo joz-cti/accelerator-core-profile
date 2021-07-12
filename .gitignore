@@ -10,3 +10,9 @@ auth.json
 # the version ranges specified within the `composer.json` file.
 composer-lock.json
 .DS_Store
+
+# Ignore directories created by Composer
+core
+modules
+themes
+vendor
