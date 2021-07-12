@@ -52,4 +52,5 @@ install:
 themes:
   - seven
   - bartik
+  - claro
   - gla_accelerator_theme

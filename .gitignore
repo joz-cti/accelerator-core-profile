@@ -9,3 +9,4 @@ auth.json
 # create-project` command based on the latest versions within
 # the version ranges specified within the `composer.json` file.
 composer-lock.json
+.DS_Store
