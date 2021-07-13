@@ -43,7 +43,7 @@
         "drupal/select2": "^1.13",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
-        "gla/accelerator-theme": "^1.0",
+        "gla/gla_core_theme": "^1.0",
         "npm-asset/chosen-js": "^1.8",
         "npm-asset/select2": "^4.0",
         "vlucas/phpdotenv": "^5.1"
