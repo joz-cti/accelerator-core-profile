@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee8c9a321b2bf2a8b6c018ea903ccfb0",
+    "content-hash": "47b624da4de32f14e95636b8e6c5d3ab",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4543,17 +4543,17 @@
             "time": "2021-05-06T09:03:35+00:00"
         },
         {
-            "name": "gla/accelerator-theme",
-            "version": "1.0.1",
+            "name": "gla/gla_core_theme",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:GreaterLondonAuthority/accelerator-core-theme.git",
-                "reference": "351283b301ba1dc06bfe479453f48197fe150a92"
+                "reference": "9b56076a0ab06003f2c7d255c0ed08f63f572145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GreaterLondonAuthority/accelerator-core-theme/zipball/351283b301ba1dc06bfe479453f48197fe150a92",
-                "reference": "351283b301ba1dc06bfe479453f48197fe150a92",
+                "url": "https://api.github.com/repos/GreaterLondonAuthority/accelerator-core-theme/zipball/9b56076a0ab06003f2c7d255c0ed08f63f572145",
+                "reference": "9b56076a0ab06003f2c7d255c0ed08f63f572145",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4569,10 +4569,10 @@
             ],
             "description": "Core Theme used by the GLA drupal accelerator and all drupal sites within the GLA estate",
             "support": {
-                "source": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/tree/1.0.1",
+                "source": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/tree/1.0.2",
                 "issues": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/issues"
             },
-            "time": "2021-07-12T09:50:27+00:00"
+            "time": "2021-07-13T09:17:30+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -14631,5 +14631,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
