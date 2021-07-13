@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - gla_accelerator_theme
+    - gla_core_theme
 id: mainpagecontent
-theme: gla_accelerator_theme
+theme: gla_core_theme
 region: content
 weight: 0
 provider: null

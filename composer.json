@@ -1,5 +1,5 @@
 {
-    "name": "gla/accelerator-core-alpha",
+    "name": "gla/gla_core_profile",
     "type": "drupal-profile",
     "license": "OGL-3.0",
     "description": "Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
