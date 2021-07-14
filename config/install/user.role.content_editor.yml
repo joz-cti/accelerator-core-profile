@@ -7,4 +7,5 @@ weight: -6
 is_admin: null
 permissions:
   - 'administer permissions'
+  - 'use text format basic_html'
   - 'use text format full_html'

@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - editor
+    - media
 name: 'Full HTML'
 format: full_html
 weight: 0
@@ -37,7 +38,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href id class hreflang rel target title type name aria-label download data-*> <em> <strong> <cite> <blockquote cite data-* class> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <u> <pre> <sup> <sub> <h2 id class> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <p class> <img src alt data-*> <table class> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <small>'
+      allowed_html: '<a href id class hreflang rel target title type name aria-label download data-*> <em> <strong> <cite> <blockquote cite data-* class> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <u> <pre> <sup> <sub> <h3 id class> <h4 id class> <h5 id class> <h6 id class> <p class> <img src alt data-*> <table class> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <small><strike>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_htmlcorrector:
@@ -59,3 +60,12 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }
