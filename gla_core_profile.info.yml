@@ -25,7 +25,6 @@ install:
   - content_lock
   - content_moderation
   - datalayer
-  - dblog
   - dynamic_page_cache
   - entity_reference_display
   - entity_usage
