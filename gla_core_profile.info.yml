@@ -25,6 +25,7 @@ install:
   - content_lock
   - content_moderation
   - datalayer
+  - disable_html5_validation
   - dynamic_page_cache
   - entity_reference_display
   - entity_usage
