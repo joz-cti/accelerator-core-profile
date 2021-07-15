@@ -53,6 +53,7 @@ install:
   - webform
   - formdazzle
   - components
+  - ckeditor_config
 
 themes:
   - seven

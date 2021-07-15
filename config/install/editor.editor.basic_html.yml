@@ -43,6 +43,14 @@ settings:
       language_list: un
     stylescombo:
       styles: ''
+    customconfig:
+      ckeditor_custom_config: |-
+        pasteFromWordPromptCleanup = true
+        pasteFromWordRemoveFontStyles = true
+        forceSimpleAmpersand = true
+        bodyClass = "rich-text u-prose u-m-10"
+        removePlugins = "magicline"
+        disableNativeSpellChecker = false
 image_upload:
   status: true
   scheme: public
