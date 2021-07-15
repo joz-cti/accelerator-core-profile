@@ -52,6 +52,7 @@ install:
   - select2
   - webform
   - formdazzle
+  - components
 
 themes:
   - seven
