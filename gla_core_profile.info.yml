@@ -51,6 +51,7 @@ install:
   - search_api_exclude_entity
   - select2
   - webform
+  - formdazzle
 
 themes:
   - seven
