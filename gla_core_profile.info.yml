@@ -35,6 +35,7 @@ install:
   - focal_point
   - formdazzle
   - google_tag
+  - inline_form_errors
   - media_library
   - menu_admin_per_menu
   - metatag
