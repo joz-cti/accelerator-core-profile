@@ -54,6 +54,7 @@ install:
   - search_api_exclude_entity
   - select2
   - taxonomy
+  - twig_field_value
   - views
   - webform
 
