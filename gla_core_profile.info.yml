@@ -55,6 +55,7 @@ install:
   - select2
   - taxonomy
   - twig_field_value
+  - username_enumeration_prevention
   - views
   - webform
 
