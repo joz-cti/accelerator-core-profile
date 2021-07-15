@@ -47,6 +47,7 @@ install:
   - publication_date
   - rabbit_hole
   - replicate
+  - replicate_ui
   - responsive_image
   - scheduler
   - search_api_exclude_entity
