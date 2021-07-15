@@ -39,17 +39,21 @@ install:
   - field_ui
   - focal_point
   - google_tag
+  - login_emailusername
   - menu_admin_per_menu
   - metatag
   - multiline_config
   - paragraphs
   - publication_date
-  - password_policy
+  - password_policy_history
+  - password_policy_length
+  - password_policy_username
   - rabbit_hole
   - replicate
   - scheduler
   - search_api_exclude_entity
   - select2
+  - username_enumeration_prevention
   - webform
 
 themes:
