@@ -61,7 +61,7 @@
     "require-dev": {
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^9.1",
-        "vijaycs85/drupal-quality-checker": "^1.5"
+        "vijaycs85/drupal-quality-checker": "dev-master"
     },
     "config": {
         "sort-packages": true
@@ -87,6 +87,10 @@
         }
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lukewhitmore/drupal-quality-checker"
+        },
         {
             "type": "composer",
             "url": "https://repo.packagist.com/greaterlondonauthori/"
