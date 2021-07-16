@@ -4,17 +4,6 @@ description: 'Drupal install profile to use as the base for all Drupal propertie
 core_version_requirement: '^9'
 langcode: en
 install:
-  - node
-  - views
-  - block
-  - content_moderation
-  - dblog
-  - media_library
-  - page_cache
-  - path
-  - dynamic_page_cache
-  - responsive_image
-  - taxonomy
   - access_unpublished
   - admin_toolbar
   - admin_toolbar_links_access_filter
@@ -23,33 +12,51 @@ install:
   - advagg
   - allowed_formats
   - bamboo_twig
+  - block
   - chosen
   - ckeditor
+  - ckeditor_config
+  - components
   - config_filter
   - config_ignore
   - config_pages
   - config_rewrite
   - config_split
   - content_lock
+  - content_moderation
   - datalayer
+  - disable_html5_validation
+  - dynamic_page_cache
   - entity_reference_display
   - entity_usage
   - environment_indicator
   - field_group_link
   - field_ui
   - focal_point
+  - formdazzle
   - google_tag
+  - inline_form_errors
+  - media_library
   - menu_admin_per_menu
   - metatag
   - multiline_config
+  - node
+  - page_cache
   - paragraphs
-  - publication_date
   - password_policy
+  - path
+  - publication_date
   - rabbit_hole
   - replicate
+  - replicate_ui
+  - responsive_image
   - scheduler
   - search_api_exclude_entity
   - select2
+  - taxonomy
+  - twig_field_value
+  - username_enumeration_prevention
+  - views
   - webform
 
 themes:
