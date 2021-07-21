@@ -18,6 +18,5 @@ jobs:
         with:
           php_version: 8.0
           version: 2
-          args: --ignore-platform-reqs
       - name: Test codebase with grumPHP
         run: ./vendor/bin/grumphp run
