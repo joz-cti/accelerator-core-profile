@@ -17,7 +17,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           php_version: 8.0
-          php_extensions: gd dom xml
+          php_extensions: gd
           version: 2
       - name: Test codebase with grumPHP
         run: ./vendor/bin/grumphp run
