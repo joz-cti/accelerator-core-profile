@@ -15,13 +15,13 @@ jobs:
       - run: echo "Setting up PHP dependencies."
       - name: Setup PHP GD
         uses: shivammathur/setup-php@develop
-          with:
-            php-version: 8.0
-            extensions: gd-php/php-src@PHP-8.0
-          env:
-            GD_CONFIGURE_OPTS: --enable-gd=shared,/usr --with-external-gd --with-jpeg
-            GD_LIBS: libgd-dev libjpeg-dev
-            GD_PATH: ext/gd
+        with:
+          php-version: 8.0
+          extensions: gd-php/php-src@PHP-8.0
+        env:
+          GD_CONFIGURE_OPTS: --enable-gd=shared,/usr --with-external-gd --with-jpeg
+          GD_LIBS: libgd-dev libjpeg-dev
+          GD_PATH: ext/gd
       - name: Load Composer dependencies
         uses: php-actions/composer@v6
         with:
