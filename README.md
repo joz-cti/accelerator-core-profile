@@ -1,3 +1,5 @@
+[![Drupal Code Quality](https://github.com/GreaterLondonAuthority/accelerator-core-alpha/actions/workflows/drupal-code-quality.yml/badge.svg)](https://github.com/GreaterLondonAuthority/accelerator-core-alpha/actions/workflows/drupal-code-quality.yml)
+
 # Accelerator core (alpha)
 
 A Drupal distribution and install profile to use as the base for all
