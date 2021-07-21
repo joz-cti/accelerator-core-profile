@@ -13,19 +13,11 @@ jobs:
       - run: echo "The workflow is now ready to test your code on the runner."
       - run: cd ${{ github.workspace }}
       - run: echo "Setting up PHP dependencies."
-      - name: Setup PHP GD
-        uses: shivammathur/setup-php@develop
-        with:
-          php-version: 8.0
-          extensions: gd-php/php-src@PHP-8.0
-        env:
-          GD_CONFIGURE_OPTS: --enable-gd=shared,/usr --with-external-gd --with-jpeg
-          GD_LIBS: libgd-dev libjpeg-dev
-          GD_PATH: ext/gd
       - name: Load Composer dependencies
         uses: php-actions/composer@v6
         with:
           php_version: 8.0
           version: 2
+          args: --ignore-platform-reqs
       - name: Test codebase with grumPHP
         run: ./vendor/bin/grumphp run
