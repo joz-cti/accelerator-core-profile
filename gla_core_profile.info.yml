@@ -37,6 +37,7 @@ install:
   - google_tag
   - inline_form_errors
   - media_library
+  - login_emailusername
   - menu_admin_per_menu
   - metatag
   - multiline_config
@@ -46,6 +47,10 @@ install:
   - password_policy
   - path
   - publication_date
+  - password_policy_characters
+  - password_policy_history
+  - password_policy_length
+  - password_policy_username
   - rabbit_hole
   - replicate
   - replicate_ui
