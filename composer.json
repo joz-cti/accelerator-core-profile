@@ -5,6 +5,7 @@
     "homepage": "https://github.com/GreaterLondonAuthority/accelerator-core-alpha",
     "license": "OGL-3.0",
     "require": {
+        "ext-gd": "*",
         "composer/installers": "^1.10",
         "cweagans/composer-patches": "~1.0",
         "drupal/access_unpublished": "^1.2",
