@@ -34,6 +34,7 @@ install:
   - field_ui
   - focal_point
   - formdazzle
+  - gla_rich_text
   - google_tag
   - inline_form_errors
   - media_library
