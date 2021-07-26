@@ -13,6 +13,11 @@ composer-lock.json
 
 # Ignore directories created by Composer
 core
-modules
+modules/**/*
 themes
 vendor
+
+# Un-ignore custom modules
+!modules/gla_core_*
+!modules/gla_core_*/*
+!modules/gla_core_*/**
