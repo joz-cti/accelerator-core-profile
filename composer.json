@@ -128,5 +128,11 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+            "rm -rf core",
+            "find modules/* | grep -v \"gla_*\" | xargs rm -rf"
+        ]
+    }
 }
