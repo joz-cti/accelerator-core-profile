@@ -40,6 +40,7 @@ install:
   - gla_core_example_content
   - gla_core_rich_text
   - google_tag
+  - gla_core_users
   - hal
   - inline_form_errors
   - media_library
