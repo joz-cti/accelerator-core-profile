@@ -35,6 +35,7 @@ install:
   - focal_point
   - formdazzle
   - google_tag
+  - gla_core_users
   - inline_form_errors
   - media_library
   - login_emailusername
