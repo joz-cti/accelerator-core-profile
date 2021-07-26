@@ -8,9 +8,9 @@
 /**
  * Implements hook_theme().
  */
-function gla_rich_text_theme($existing, $type, $theme, $path) {
+function gla_core_rich_text_theme($existing, $type, $theme, $path) {
   return [
-    'gla_rich_text_scrollable_table' => [
+    'gla_core_rich_text_scrollable_table' => [
       'variables' => ['content' => NULL],
       'template' => 'scrollable-table',
     ],

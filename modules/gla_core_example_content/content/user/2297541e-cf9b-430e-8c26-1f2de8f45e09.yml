@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 2297541e-cf9b-430e-8c26-1f2de8f45e09
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: 'Example Site Administrator'
+  pass:
+    -
+      value: $S$EQis27IAEh1rlSRvJ/KDUgYM1jtoDpKZ49nN1YHh490Kf/lQVb14
+      existing: ''
+      pre_hashed: true
+  mail:
+    -
+      value: example-site-administrator@example.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627316008
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: example-site-administrator@example.com
+  roles:
+    -
+      target_id: site_administrator
+  field_last_password_reset:
+    -
+      value: '2021-07-26T16:13:40'
+  field_password_expiration:
+    -
+      value: false

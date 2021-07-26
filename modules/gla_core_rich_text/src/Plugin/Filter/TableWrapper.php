@@ -1,20 +1,19 @@
 <?php
 
-namespace Drupal\gla_rich_text\Plugin\Filter;
+namespace Drupal\gla_core_rich_text\Plugin\Filter;
 
 use Drupal\filter\FilterProcessResult;
 use Drupal\filter\Plugin\FilterBase;
-use function reset;
 
-define('GLA_RICH_TEXT_TABLE_WRAPPER_START_REGEX', '/\<table.*?\>/s');
-define('GLA_RICH_TEXT_TABLE_WRAPPER_END_REGEX', '/\<\/table.*?\>/s');
+define('GLA_CORE_RICH_TEXT_TABLE_WRAPPER_START_REGEX', '/\<table.*?\>/s');
+define('GLA_CORE_RICH_TEXT_TABLE_WRAPPER_END_REGEX', '/\<\/table.*?\>/s');
 
 
 /**
  * Provides a filter to wrap tables in a div to make them scrollable.
  *
  * @Filter(
- *   id = "gla_rich_text_table_wrapper",
+ *   id = "GLA_CORE_RICH_TEXT_TABLE_wrapper",
  *   title = @Translation("Add wrapper to tables to make them scrollable on small screens"),
  *   type = Drupal\filter\Plugin\FilterInterface::TYPE_TRANSFORM_IRREVERSIBLE,
  *   weight = -10
@@ -31,12 +30,12 @@ class TableWrapper extends FilterBase {
    *   The two parts of our scrollable table wrapper, as an array.
    */
   private function getTableWrapperParts() {
-    // An arbitary string that we will use later on to split our scrollable
+    // An arbitrary string that we will use later on to split our scrollable
     // table component into a part that comes before the content it will
     // wrap, and a part that comes after the content that it will wrap.
     $divider = '|||';
     $table_wrapper = [
-      '#theme' => 'gla_rich_text_scrollable_table',
+      '#theme' => 'gla_core_rich_text_scrollable_table',
       '#content' => $divider,
     ];
     // Render our component with our divider string and turn it into HTML.
@@ -53,11 +52,11 @@ class TableWrapper extends FilterBase {
   public function process($text, $langcode) {
     // Find the start and end of the table and use a callback to transform the
     // markup.
-    $text = preg_replace_callback(GLA_RICH_TEXT_TABLE_WRAPPER_START_REGEX, [
+    $text = preg_replace_callback(GLA_CORE_RICH_TEXT_TABLE_WRAPPER_START_REGEX, [
       &$this,
       'startReplace',
     ], $text);
-    $text = preg_replace_callback(GLA_RICH_TEXT_TABLE_WRAPPER_END_REGEX, [
+    $text = preg_replace_callback(GLA_CORE_RICH_TEXT_TABLE_WRAPPER_END_REGEX, [
       &$this,
       'endReplace',
     ], $text);

@@ -1,0 +1,7 @@
+login_redirection:
+  anonymous: null
+  authenticated: /admin/content
+  administrator: /admin/content
+  site_administrator: /admin/content
+  content_editor: /admin/content
+exclude_urls: ''
