@@ -75,6 +75,7 @@
         "enable-patching": true,
         "patches": {
             "drupal/civicccookiecontrol": {
+                "Collapse details panes by default to improve UX: https://www.drupal.org/project/civicccookiecontrol/issues/3225504": "https://www.drupal.org/files/issues/2021-07-27/collapse-details-panes-by-default-3225504-2.patch",
                 "Move the admin menu entry to a more appropriate category subgroup: https://www.drupal.org/project/civicccookiecontrol/issues/3225391": "https://www.drupal.org/files/issues/2021-07-27/move-admin-menu-location-3225391-3.patch"
             },
             "drupal/core": {
