@@ -76,7 +76,8 @@
         "patches": {
             "drupal/civicccookiecontrol": {
                 "Collapse details panes by default to improve UX: https://www.drupal.org/project/civicccookiecontrol/issues/3225504": "https://www.drupal.org/files/issues/2021-07-27/collapse-details-panes-by-default-3225504-2.patch",
-                "Move the admin menu entry to a more appropriate category subgroup: https://www.drupal.org/project/civicccookiecontrol/issues/3225391": "https://www.drupal.org/files/issues/2021-07-27/move-admin-menu-location-3225391-3.patch"
+                "Move the admin menu entry to a more appropriate category subgroup: https://www.drupal.org/project/civicccookiecontrol/issues/3225391": "https://www.drupal.org/files/issues/2021-07-27/move-admin-menu-location-3225391-3.patch",
+                "Unable to add dummy API key allow for config override: https://www.drupal.org/project/civicccookiecontrol/issues/3225390": "https://www.drupal.org/files/issues/2021-07-27/allow-api-validation-to-be-disabled-3225390-2.patch"
             },
             "drupal/core": {
                 "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
