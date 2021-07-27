@@ -57,7 +57,7 @@
         "drupal/username_enumeration_prevention": "^1.2",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
-        "gla/gla_core_theme": "^1.0",
+        "gla/gla_core_theme": "^1.2",
         "npm-asset/chosen-js": "^1.8",
         "npm-asset/select2": "^4.0",
         "vlucas/phpdotenv": "^5.1"
@@ -131,8 +131,15 @@
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
+            "@clearNonCustomDrupalDependencies"
+        ],
+        "post-update-cmd": [
+            "@clearNonCustomDrupalDependencies"
+        ],
+        "clearNonCustomDrupalDependencies": [
             "rm -rf core",
-            "find modules/* | grep -v \"gla_*\" | xargs rm -rf"
+            "find modules/* | grep -v \"gla_*\" | xargs rm -rf",
+            "composer dump-autoload"
         ]
     }
 }

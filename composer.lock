@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76dba95206ac0f265ac9cab2095a6743",
+    "content-hash": "655afed011aca832b59e139b7b3f47e6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5238,16 +5238,16 @@
         },
         {
             "name": "gla/gla_core_theme",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GreaterLondonAuthority/accelerator-core-theme.git",
-                "reference": "1da627f9a1509aacd8e9c15ce4fac98e968ba131"
+                "reference": "b959694984027a61dcb1fa909d2cb41cf2191668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GreaterLondonAuthority/accelerator-core-theme/zipball/1da627f9a1509aacd8e9c15ce4fac98e968ba131",
-                "reference": "1da627f9a1509aacd8e9c15ce4fac98e968ba131",
+                "url": "https://api.github.com/repos/GreaterLondonAuthority/accelerator-core-theme/zipball/b959694984027a61dcb1fa909d2cb41cf2191668",
+                "reference": "b959694984027a61dcb1fa909d2cb41cf2191668",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5287,10 +5287,10 @@
             ],
             "description": "Core GLA estate Drupal theme",
             "support": {
-                "source": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/tree/1.2.3",
+                "source": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/tree/1.2.4",
                 "issues": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/issues"
             },
-            "time": "2021-07-19T15:47:09+00:00"
+            "time": "2021-07-23T15:14:29+00:00"
         },
         {
             "name": "graham-campbell/result-type",
