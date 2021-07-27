@@ -14,6 +14,7 @@ install:
   - bamboo_twig
   - block
   - chosen
+  - civiccookiecontrol
   - ckeditor
   - ckeditor_config
   - components
