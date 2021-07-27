@@ -13,6 +13,7 @@
         "drupal/allowed_formats": "^1.3",
         "drupal/bamboo_twig": "^5.0@alpha",
         "drupal/chosen": "^3.0",
+        "drupal/civicccookiecontrol": "^4.4",
         "drupal/ckeditor_config": "^3.0",
         "drupal/components": "^2.4",
         "drupal/config_filter": "^2.2",
@@ -20,6 +21,7 @@
         "drupal/config_pages": "^2.9",
         "drupal/config_rewrite": "^1.4",
         "drupal/config_split": "^2.0@beta",
+        "drupal/config_update": "^1.0",
         "drupal/content_lock": "^2.2",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
@@ -70,6 +72,9 @@
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
         "patches": {
+            "drupal/civicccookiecontrol": {
+                "Move the admin menu entry to a more appropriate category subgroup: https://www.drupal.org/project/civicccookiecontrol/issues/3225391": "https://www.drupal.org/files/issues/2021-07-27/move-admin-menu-location-3225391-3.patch"
+            },
             "drupal/core": {
                 "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
                 "Add a hook to modify oEmbed resource data": "https://www.drupal.org/files/issues/2021-06-17/3042423-32.patch",
