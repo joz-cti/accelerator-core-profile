@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Code to alter default User behaviour.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function gla_core_users_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Add a custom validate hook onto the user form and user register form.
+  if ($form_id == 'user_form' || $form_id == 'user_register_form') {
+    $form['#validate'][] = 'gla_core_users_username_validate';
+  }
+}
+
+/**
+ * Validates the username based on the configuration.
+ */
+function gla_core_users_username_validate($form, &$form_state) {
+  $username = $form_state->getvalues()['name'];
+  $field_name = $form['account']['name']['#title'];
+  $minimum_characters = '8';
+
+  // If the username if less than 8 characters then throw an error.
+  if (strlen($username) < $minimum_characters) {
+    $form_state->setErrorByName('name', t('@field_name should have minimum of @minimum_characters characters.',
+      [
+        '@field_name' => $field_name,
+        '@minimum_characters' => $minimum_characters,
+      ]
+    ));
+  }
+}
