@@ -1,0 +1,17 @@
+uuid: 46ce5c8d-91f4-4d23-9962-2e9d1ebdae48
+langcode: en
+status: true
+dependencies: {  }
+id: site_metrics
+cookieName: 'Site Metrics'
+cookieLabel: 'Site Metrics'
+cookieDescription: '<p>Recording usage metrics to help inform decision making</p>'
+cookies: '_ga, _gid, _gat, __utma'
+thirdPartyCookies: ''
+thirdPartyCookiesCount: '0'
+vendors: ''
+vendorsCount: '0'
+onAcceptCallback: ''
+onRevokeCallback: ''
+recommendedState: false
+lawfulBasis: consent
