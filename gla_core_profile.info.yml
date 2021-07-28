@@ -5,12 +5,14 @@ core_version_requirement: '^9'
 langcode: en
 install:
   - access_unpublished
+  - admin_login_path
   - admin_toolbar
   - admin_toolbar_links_access_filter
   - admin_toolbar_search
   - admin_toolbar_tools
   - advagg
   - allowed_formats
+  - auto_heading_ids
   - bamboo_twig
   - block
   - chosen
@@ -25,6 +27,7 @@ install:
   - content_lock
   - content_moderation
   - datalayer
+  - default_content
   - disable_html5_validation
   - dynamic_page_cache
   - entity_reference_display
@@ -34,8 +37,11 @@ install:
   - field_ui
   - focal_point
   - formdazzle
+  - gla_core_example_content
+  - gla_core_rich_text
   - google_tag
   - gla_core_users
+  - hal
   - inline_form_errors
   - media_library
   - login_emailusername
@@ -52,10 +58,13 @@ install:
   - password_policy_history
   - password_policy_length
   - password_policy_username
+  - r4032login
   - rabbit_hole
+  - redirect_after_login
   - replicate
   - replicate_ui
   - responsive_image
+  - serialization
   - scheduler
   - search_api_exclude_entity
   - select2

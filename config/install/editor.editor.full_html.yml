@@ -12,6 +12,11 @@ settings:
     rows:
       -
         -
+          name: 'Formats and Styles'
+          items:
+            - Format
+            - Styles
+        -
           name: Formatting
           items:
             - Bold
@@ -34,29 +39,46 @@ settings:
         -
           name: Media
           items:
-            - Blockquote
             - Table
             - HorizontalRule
         -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
           name: Tools
           items:
+            - PasteText
+            - PasteFromWord
             - ShowBlocks
             - Source
+            - Maximize
+            - Undo
+            - Redo
   plugins:
     language:
       language_list: un
     stylescombo:
-      styles: ''
+      styles: p.lead|Lead
+    codemirror:
+      enable: true
+      startupMode: wysiwyg
+      mode: htmlmixed
+      theme: default
+      options:
+        lineNumbers: true
+        lineWrapping: true
+        matchBrackets: true
+        autoCloseTags: true
+        autoCloseBrackets: true
+        enableSearchTools: false
+        enableCodeFolding: false
+        enableCodeFormatting: false
+        autoFormatOnStart: false
+        autoFormatOnModeChange: true
+        autoFormatOnUncomment: true
     customconfig:
       ckeditor_custom_config: |-
         pasteFromWordPromptCleanup = true
         pasteFromWordRemoveFontStyles = true
         forceSimpleAmpersand = true
-        bodyClass = "rich-text u-prose u-m-10"
+        bodyClass = "rich-text u-m-5"
         removePlugins = "magicline"
         disableNativeSpellChecker = false
 image_upload:

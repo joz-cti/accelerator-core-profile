@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c726dd0ef131ab020a62dbc3fa1afd46",
+    "content-hash": "655afed011aca832b59e139b7b3f47e6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1458,6 +1458,63 @@
             }
         },
         {
+            "name": "drupal/admin_login_path",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/admin_login_path.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_login_path-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "4730b3711db00a1e48a63e53aa39be251ab837fd"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1614566557",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Wald",
+                    "homepage": "https://www.drupal.org/u/bcwald"
+                },
+                {
+                    "name": "Devin Carlson",
+                    "homepage": "https://www.drupal.org/u/devin-carlson"
+                },
+                {
+                    "name": "Ben Voynick",
+                    "homepage": "https://www.drupal.org/u/bvoynick"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/2894919/committers"
+                }
+            ],
+            "description": "A simple module that routes the login pages to use the admin (theme) path.",
+            "homepage": "https://www.drupal.org/project/admin_login_path",
+            "support": {
+                "source": "http://git.drupal.org/project/admin_login_path.git",
+                "issues": "https://www.drupal.org/project/issues/admin_login_path"
+            }
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "3.0.1",
             "source": {
@@ -1663,6 +1720,63 @@
             "homepage": "https://www.drupal.org/project/allowed_formats",
             "support": {
                 "source": "https://git.drupalcode.org/project/allowed_formats"
+            }
+        },
+        {
+            "name": "drupal/auto_heading_ids",
+            "version": "dev-2.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/auto_heading_ids.git",
+                "reference": "cd2c4de8be3defa07fc7b23d8b675125e90a2f68"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.x-dev",
+                    "datestamp": "1627317478",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bart88",
+                    "homepage": "https://www.drupal.org/user/3198481"
+                },
+                {
+                    "name": "caseyfw",
+                    "homepage": "https://www.drupal.org/user/3150611"
+                },
+                {
+                    "name": "pingers",
+                    "homepage": "https://www.drupal.org/user/56282"
+                },
+                {
+                    "name": "singularo",
+                    "homepage": "https://www.drupal.org/user/143"
+                }
+            ],
+            "description": "This module provides a filter to automatically apply identifiers to headings in content.",
+            "homepage": "https://www.drupal.org/project/auto_heading_ids",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/auto_heading_ids",
+                "issues": "https://www.drupal.org/project/issues/auto_heading_ids"
             }
         },
         {
@@ -1877,6 +1991,57 @@
             "homepage": "https://www.drupal.org/project/chosen",
             "support": {
                 "source": "https://git.drupalcode.org/project/chosen"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_codemirror",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_codemirror.git",
+                "reference": "8.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_codemirror-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "dfb00a0ec44953846d689d1e72f40e4201c8a355"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.3",
+                    "datestamp": "1586020798",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nickolay Leshchev (Plazik)",
+                    "homepage": "https://www.drupal.org/u/plazik",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Christopher C. Wells (wells)",
+                    "homepage": "https://www.drupal.org/u/wells",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Adds the CKEditor CodeMirror source syntax highlighter plugin.",
+            "homepage": "https://drupal.org/project/ckeditor_codemirror",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ckeditor_codemirror",
+                "issues": "https://www.drupal.org/project/issues/ckeditor_codemirror?version=8.x"
             }
         },
         {
@@ -2973,6 +3138,82 @@
             }
         },
         {
+            "name": "drupal/default_content",
+            "version": "2.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/default_content.git",
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/default_content-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "0d534ab8e44786a352e24c7cec3dc06bef155f66"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "require-dev": {
+                "drupal/paragraphs": "^1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1595072288",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "andypost",
+                    "homepage": "https://www.drupal.org/user/118908"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "jibran",
+                    "homepage": "https://www.drupal.org/user/1198144"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Imports default content when a module is enabled",
+            "homepage": "https://www.drupal.org/project/default_content",
+            "support": {
+                "source": "https://git.drupalcode.org/project/default_content"
+            }
+        },
+        {
             "name": "drupal/disable_html5_validation",
             "version": "1.1.0",
             "source": {
@@ -4002,6 +4243,63 @@
             }
         },
         {
+            "name": "drupal/redirect_after_login",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/redirect_after_login.git",
+                "reference": "8.x-2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect_after_login-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "3ce87df792e918c2ec5a00e24818c893e558d111"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.7",
+                    "datestamp": "1611645039",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Shamsher Alam",
+                    "homepage": "https://www.drupal.org/u/shamsher_alam",
+                    "role": "Author"
+                },
+                {
+                    "name": "pen",
+                    "homepage": "https://www.drupal.org/user/2435634"
+                },
+                {
+                    "name": "prempatel2447",
+                    "homepage": "https://www.drupal.org/user/3250112"
+                },
+                {
+                    "name": "rahul-kr-sh",
+                    "homepage": "https://www.drupal.org/user/3561577"
+                }
+            ],
+            "description": "Redirect user after login to a configured url",
+            "homepage": "https://drupal.org/project/redirect_after_login",
+            "support": {
+                "source": "https://git.drupalcode.org/project/redirect_after_login"
+            }
+        },
+        {
             "name": "drupal/replicate",
             "version": "1.0.0",
             "source": {
@@ -4940,16 +5238,16 @@
         },
         {
             "name": "gla/gla_core_theme",
-            "version": "1.2.4",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GreaterLondonAuthority/accelerator-core-theme.git",
-                "reference": "b959694984027a61dcb1fa909d2cb41cf2191668"
+                "reference": "34df8e29dabfcfe8b872d7b8fed0fd512aaf2e50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GreaterLondonAuthority/accelerator-core-theme/zipball/b959694984027a61dcb1fa909d2cb41cf2191668",
-                "reference": "b959694984027a61dcb1fa909d2cb41cf2191668",
+                "url": "https://api.github.com/repos/GreaterLondonAuthority/accelerator-core-theme/zipball/34df8e29dabfcfe8b872d7b8fed0fd512aaf2e50",
+                "reference": "34df8e29dabfcfe8b872d7b8fed0fd512aaf2e50",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4985,14 +5283,14 @@
             },
             "notification-url": "https://repo.packagist.com/greaterlondonauthori/downloads/",
             "license": [
-                "OGL-3.0"
+                "OGL-UK-3.0"
             ],
             "description": "Core GLA estate Drupal theme",
             "support": {
-                "source": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/tree/1.2.4",
+                "source": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/tree/1.3.0",
                 "issues": "https://github.com/GreaterLondonAuthority/accelerator-core-theme/issues"
             },
-            "time": "2021-07-23T15:14:29+00:00"
+            "time": "2021-07-28T15:13:50+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -14803,6 +15101,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
@@ -15982,9 +16281,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/auto_heading_ids": 20,
         "drupal/bamboo_twig": 15,
         "drupal/config_split": 10,
         "drupal/datalayer": 10,
+        "drupal/default_content": 15,
         "drupal/entity_usage": 10,
         "drupal/field_group_link": 5,
         "drupal/password_policy": 10,
