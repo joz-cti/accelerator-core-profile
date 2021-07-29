@@ -38,7 +38,6 @@ install:
   - field_ui
   - focal_point
   - formdazzle
-  - gla_core_example_content
   - gla_core_rich_text
   - google_tag
   - gla_core_users
