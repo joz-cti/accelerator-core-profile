@@ -23,6 +23,7 @@ install:
   - config_pages
   - config_rewrite
   - config_split
+  - config_update
   - content_lock
   - content_moderation
   - datalayer
