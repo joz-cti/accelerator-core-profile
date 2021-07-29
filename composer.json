@@ -114,19 +114,6 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "w8tcha/ckeditor_codemirror",
-                "version": "v1.17.7",
-                "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin",
-                    "type": "git",
-                    "reference": "v1.17.7"
-                }
-            }
         }
     ],
     "minimum-stability": "dev",
