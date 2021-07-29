@@ -17,6 +17,7 @@ install:
   - block
   - chosen
   - ckeditor
+  - ckeditor_codemirror
   - ckeditor_config
   - components
   - config_filter
