@@ -7,5 +7,5 @@ weight: -9
 is_admin: false
 permissions:
   - 'access content'
-  - 'use text format restricted_html'
   - 'view media'
+  - 'view the administration theme'
