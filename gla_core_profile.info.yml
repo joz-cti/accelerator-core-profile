@@ -39,12 +39,12 @@ install:
   - focal_point
   - formdazzle
   - gla_core_rich_text
-  - google_tag
   - gla_core_users
+  - google_tag
   - hal
   - inline_form_errors
-  - media_library
   - login_emailusername
+  - media_library
   - menu_admin_per_menu
   - metatag
   - multiline_config
@@ -52,24 +52,25 @@ install:
   - page_cache
   - paragraphs
   - password_policy
-  - path
-  - publication_date
   - password_policy_characters
   - password_policy_history
   - password_policy_length
   - password_policy_username
+  - path
+  - publication_date
   - r4032login
   - rabbit_hole
   - redirect_after_login
   - replicate
   - replicate_ui
   - responsive_image
-  - serialization
   - scheduler
   - search_api_exclude_entity
   - select2
+  - serialization
   - taxonomy
   - twig_field_value
+  - twigsuggest
   - username_enumeration_prevention
   - views
   - webform
