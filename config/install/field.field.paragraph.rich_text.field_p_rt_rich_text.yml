@@ -17,7 +17,8 @@ bundle: rich_text
 label: 'Rich text'
 description: |-
   <ul>
-  <li>Hold down your keyboard's <code>ctrl</code>/<code>command</code>/<code>⌘</code> button to access your browser's context menu for things like spellcheck suggestions</li>
+    <li>Looking for spellcheck? Hold down your keyboard's <code>ctrl</code>/<code>command</code>/<code>⌘</code> button when right-clicking to access your browser's context menu for things like spellcheck suggestions</li>
+    <li>To make the first paragraph of a page use a larger 'intro' or 'lead' styling, select the first paragraph and pick 'Lead' from the 'Styles' dropdown in the WYSIWYG editor</li>
   </ul>
 required: true
 translatable: false
