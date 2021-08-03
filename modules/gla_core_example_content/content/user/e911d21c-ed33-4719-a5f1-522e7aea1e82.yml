@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: e911d21c-ed33-4719-a5f1-522e7aea1e82
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: 'Example Content Editor'
+  pass:
+    -
+      value: $S$EO1Xt3R47JhowM5JSNHbvjPe.WeZJvndXhXjpnPZHRN/ImjKZzlg
+      existing: ''
+      pre_hashed: true
+  mail:
+    -
+      value: example-content-editor@example.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627316111
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: example-content-editor@example.com
+  roles:
+    -
+      target_id: content_editor
+  field_last_password_reset:
+    -
+      value: '2021-07-26T16:15:16'
+  field_password_expiration:
+    -
+      value: false

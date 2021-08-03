@@ -5,17 +5,20 @@ core_version_requirement: '^9'
 langcode: en
 install:
   - access_unpublished
+  - admin_login_path
   - admin_toolbar
   - admin_toolbar_links_access_filter
   - admin_toolbar_search
   - admin_toolbar_tools
   - advagg
   - allowed_formats
+  - auto_heading_ids
   - bamboo_twig
   - block
   - chosen
   - civiccookiecontrol
   - ckeditor
+  - ckeditor_codemirror
   - ckeditor_config
   - components
   - config_filter
@@ -27,6 +30,7 @@ install:
   - content_lock
   - content_moderation
   - datalayer
+  - default_content
   - disable_html5_validation
   - dynamic_page_cache
   - entity_reference_display
@@ -36,11 +40,13 @@ install:
   - field_ui
   - focal_point
   - formdazzle
-  - google_tag
+  - gla_core_rich_text
   - gla_core_users
+  - google_tag
+  - hal
   - inline_form_errors
-  - media_library
   - login_emailusername
+  - media_library
   - menu_admin_per_menu
   - metatag
   - multiline_config
@@ -48,21 +54,26 @@ install:
   - page_cache
   - paragraphs
   - password_policy
-  - path
-  - publication_date
   - password_policy_characters
+  - password_policy_character_types
   - password_policy_history
   - password_policy_length
   - password_policy_username
+  - path
+  - publication_date
+  - r4032login
   - rabbit_hole
+  - redirect_after_login
   - replicate
   - replicate_ui
   - responsive_image
   - scheduler
   - search_api_exclude_entity
   - select2
+  - serialization
   - taxonomy
   - twig_field_value
+  - twigsuggest
   - username_enumeration_prevention
   - views
   - webform

@@ -17,7 +17,11 @@ modules/**/*
 themes
 vendor
 
-# Un-ignore custom modules
+# Unignore custom modules. At the moment running `composer install`
+# from the profile root (e.g. during development to get GrumPHP to work
+# will install a bunch of contrib modules into `modules`, so we ignore the
+# whole directory except for custom modules that we want to include within
+# the profile.
 !modules/gla_core_*
 !modules/gla_core_*/*
 !modules/gla_core_*/**

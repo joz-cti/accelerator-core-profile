@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7c290a93-d5a7-45db-aa5e-467eac653986
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: unsplash-dave-george-southbank-no-attribution-needed.jpeg
+  uri:
+    -
+      value: 'public://2021-07/unsplash-dave-george-southbank-no-attribution-needed.jpeg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 148035
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627315829

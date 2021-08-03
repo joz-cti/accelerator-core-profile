@@ -1,0 +1,6 @@
+name: GLA Core Rich Text
+type: module
+description: Supports the Rich text component
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
