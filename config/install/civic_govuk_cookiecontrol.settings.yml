@@ -9,5 +9,3 @@ govuk_cookiecontrol_saved_settings_text: 'Your settings have been saved.'
 govuk_cookiecontrol_save_and_continue: 'Save and continue'
 govuk_cookiecontrol_allow_cookies_question_prefix: 'Can we use'
 govuk_cookiecontrol_allow_cookies_question_suffix: 'cookies to help us improve the service?'
-_core:
-  default_config_hash: _IOp7sGqTREbYGmk1Kl1yUMvTr5_4lPNESKb2pfe2iE
