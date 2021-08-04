@@ -97,6 +97,4 @@ civiccookiecontrol_notify_font_color: ''
 civiccookiecontrol_notify_bg_color: ''
 civiccookiecontrol_close_text: ''
 civiccookiecontrol_close_bg_color: ''
-_core:
-  default_config_hash: hBqfyfw1Mptsrq480-R3wzSuWH1RSGRYdyIQKGSwBdg
 civiccookiecontrol_disable_validation: 1
