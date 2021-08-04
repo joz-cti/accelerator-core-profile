@@ -1,0 +1,63 @@
+uuid: 64576820-d1d8-4f25-95ec-5c262170ab44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.iframe.field_p_if_iframe
+    - paragraphs.paragraphs_type.iframe
+  module:
+    - field_group
+    - iframe
+third_party_settings:
+  field_group:
+    group_link_content:
+      children:
+        - group_link
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Link content'
+    group_link:
+      children:
+        - field_p_if_iframe
+      parent_name: group_link_content
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Link
+_core:
+  default_config_hash: BBeC0gqA6bhBlLYBeHX3mQyxvkUHKC7VGrzq9xuIQPI
+id: paragraph.iframe.default
+targetEntityType: paragraph
+bundle: iframe
+mode: default
+content:
+  field_p_if_iframe:
+    weight: 1
+    settings:
+      width: ''
+      height: ''
+      class: ''
+      expose_class: false
+      frameborder: '0'
+      scrolling: ''
+      transparency: '0'
+      tokensupport: '0'
+      allowfullscreen: '0'
+    third_party_settings: {  }
+    type: iframe_urlwidthheight
+    region: content
+hidden:
+  created: true
+  status: true

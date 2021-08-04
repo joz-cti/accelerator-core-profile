@@ -1,0 +1,21 @@
+uuid: 25494652-7909-4b17-84ba-01725e1a6808
+langcode: en
+status: true
+dependencies:
+  module:
+    - iframe
+    - paragraphs
+_core:
+  default_config_hash: Kp2hz-1cxNzYq_22WuREaM_Ys6jhIMFeHO-7Xzil-F0
+id: paragraph.field_p_if_iframe
+field_name: field_p_if_iframe
+entity_type: paragraph
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

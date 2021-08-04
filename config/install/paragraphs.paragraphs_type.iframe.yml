@@ -1,0 +1,12 @@
+uuid: c5ec6ebf-9a65-4566-ab44-9c14a0b31994
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wK4z_QpQhb_tW0Dd9GxzF98MRqakgSvB6ht2fCmp__c
+id: iframe
+label: Iframe
+icon_uuid: null
+icon_default: null
+description: 'Display another URL inside this component'
+behavior_plugins: {  }
