@@ -1,14 +1,14 @@
 services:
-  cache:
+  gla_core_profile.cache:
     class: Drupal\gla_core_profile\TwigExtension\Cache
     arguments: [ "@renderer" ]
     tags:
       - { name: twig.extension }
-  cache_buster:
+  gla_core_profile.cache_buster:
     class: Drupal\gla_core_profile\TwigExtension\CacheBuster
     tags:
       - { name: twig.extension }
-  form_helper:
+  gla_core_profile.form_helper:
     class: Drupal\gla_core_profile\FormHelper
-  paragraph_helper:
+  gla_core_profile.paragraph_helper:
     class: Drupal\gla_core_profile\ParagraphHelper
