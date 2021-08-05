@@ -83,6 +83,7 @@
                 "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
                 "Add a hook to modify oEmbed resource data": "https://www.drupal.org/files/issues/2021-06-17/3042423-32.patch",
                 "Allow tokens for url of the Link field": "https://www.drupal.org/files/issues/2020-04-22/core_2903336-33_allow-tokens-in-link-url.patch",
+                "Apply width and height attributes to responsive image tag": "https://www.drupal.org/files/issues/2021-06-23/3192234-56.patch",
                 "Can only intentionally re-render an entity with references 20 times": "https://www.drupal.org/files/issues/2019-12-04/drupal-entity_re-rendering_limited-2940605-19.patch",
                 "Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
                 "Drupal.ajax does not guarantee that 'add new JS file to page' commands have finished before calling said JS": "https://www.drupal.org/files/issues/2021-06-07/1988968-236.patch",
