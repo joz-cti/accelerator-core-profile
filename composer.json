@@ -72,6 +72,7 @@
     "require-dev": {
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^9.1",
+        "franzl/studio": "^0.15.0",
         "vijaycs85/drupal-quality-checker": "dev-master"
     },
     "config": {
