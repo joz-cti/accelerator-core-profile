@@ -101,6 +101,9 @@
                 "Provide option to set ajax indicator with .use-ajax and .use-ajax-submit": "https://www.drupal.org/files/issues/2020-12-16/2818463-15.patch",
                 "State required asterisk doesn't show": "https://www.drupal.org/files/issues/2021-02-01/2912092-34.patch",
                 "[PP-1] JSON:API is typehinting LatestRevisionCheck because there is no Entity Revision Access API yet, remove that typehint once such an API exists": "https://www.drupal.org/files/issues/2019-10-21/LatestRevisionCheck-13092187-24.patch"
+            },
+            "drupal/redirect_after_login": {
+                "Headers have already been sent after upgrade to Drupal 9.2 (can't login)": "https://www.drupal.org/files/issues/2021-06-20/3214949.patch"
             }
         }
     },
