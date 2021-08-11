@@ -58,6 +58,7 @@
         "drupal/select2": "^1.13",
         "drupal/twig_field_value": "^2.0",
         "drupal/twigsuggest": "^1.0@beta",
+        "drupal/url_embed": "^1.0@beta",
         "drupal/username_enumeration_prevention": "^1.2",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
@@ -104,6 +105,10 @@
             },
             "drupal/redirect_after_login": {
                 "Headers have already been sent after upgrade to Drupal 9.2 (can't login)": "https://www.drupal.org/files/issues/2021-06-20/3214949.patch"
+            },
+            "drupal/url_embed": {
+                "Add validation to ensure URL is embeddable": "https://www.drupal.org/files/issues/2864302-10.patch",
+                "Support for Facebook/Instagram API changes - add access token settings": "https://www.drupal.org/files/issues/2020-12-29/url_embed-add-facebook-access-token-config-3177860-25.patch"
             }
         }
     },

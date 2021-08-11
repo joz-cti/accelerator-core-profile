@@ -33,6 +33,7 @@ install:
   - default_content
   - disable_html5_validation
   - dynamic_page_cache
+  - embed
   - entity_reference_display
   - entity_usage
   - environment_indicator
@@ -45,6 +46,7 @@ install:
   - google_tag
   - hal
   - inline_form_errors
+  - link
   - login_emailusername
   - media_library
   - menu_admin_per_menu
@@ -74,6 +76,7 @@ install:
   - taxonomy
   - twig_field_value
   - twigsuggest
+  - url_embed
   - username_enumeration_prevention
   - views
   - webform
