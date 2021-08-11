@@ -1,0 +1,243 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8b2e275d-cf80-4809-aff5-1e7a4a40fcb7
+  bundle: generic_content
+  default_langcode: en
+  depends:
+    99d317e6-ef6c-497c-b1bc-24b001e386f4: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'oEmbed component (example content)'
+  created:
+    -
+      value: 1627056686
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: ''
+      langcode: en
+  published_at:
+    -
+      value: 1627321379
+  field_c_gc_page_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d1f5a862-f0f8-4718-a7dc-15999b561b93
+          bundle: oembed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628700277
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_oe_link:
+            -
+              uri: 'https://twitter.com/MayorofLondon/status/1425107493831782403'
+              title: ''
+              options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 715e85af-7fa1-4295-82a5-eb786949c1af
+          bundle: oembed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628700291
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_oe_link:
+            -
+              uri: 'https://www.flickr.com/photos/greaterlondonauthority/'
+              title: ''
+              options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 197af7f5-456d-44ba-a8a6-a446f8f2f8fd
+          bundle: oembed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628700294
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_oe_link:
+            -
+              uri: 'https://www.slideshare.net/GLAWeb/london-housing-strategy'
+              title: ''
+              options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 90600a72-a955-41ca-9933-aef6f146d6c6
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628700508
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_rt_rich_text:
+            -
+              value: "<p>Notice how the SlideShare embed below is a different size to the one above and is also missing the text below it? I think this is because it is a 'secret' (unlisted) SlideShare item, and presumably that affects how it is embedded. The embed code all comes from SlideShare so I don't know if this is something that we will be able to fix. However, I noticed that <a href=\"https://www.london.gov.uk/coronavirus/londons-recovery-coronavirus-crisis/recovering-coronavirus-it-begins-you\">the D7 site does not have this issue</a>, which complicates things a little!</p>\r\n"
+              format: full_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ba4bc9a6-1cd8-429b-a5ed-16ed4b09a083
+          bundle: oembed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628700298
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_oe_link:
+            -
+              uri: 'https://www.slideshare.net/secret/59EZ32XEeRLTXc'
+              title: ''
+              options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e305b372-5e88-4f8f-ae77-40e375155de1
+          bundle: oembed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628700301
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_oe_link:
+            -
+              uri: 'https://open.spotify.com/episode/4rXmT2YldaVV2GKLtaJqtB'
+              title: ''
+              options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b8b661cf-f185-450e-a5aa-850bcfaf5517
+          bundle: oembed
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628700303
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_oe_link:
+            -
+              uri: 'https://soundcloud.com/user-829825899/sadiq-khan-mayor-of-london'
+              title: ''
+              options: {  }
+  field_c_gc_remove_breadcrumbs:
+    -
+      value: false
+  field_c_gc_remove_title:
+    -
+      value: false
+  field_c_gc_visually_hide_title:
+    -
+      value: false
+  field_sapi_exclude:
+    -
+      value: false
+  field_teaser:
+    -
+      value: 'Cras sollicitudin felis urna. Nulla iaculis ac magna at dictum. Aenean auctor, diam sed dictum scelerisque, eros arcu molestie enim, non mollis turpis massa non ligula. '
+  field_teaser_image:
+    -
+      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
