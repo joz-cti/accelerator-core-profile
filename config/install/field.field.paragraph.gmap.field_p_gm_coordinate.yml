@@ -1,0 +1,33 @@
+uuid: 07437dfe-62d6-4285-8edc-892c442d254d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_gm_coordinate
+    - paragraphs.paragraphs_type.gmap
+  module:
+    - datalayer
+    - geolocation
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_gm_coordinate
+id: paragraph.gmap.field_p_gm_coordinate
+field_name: field_p_gm_coordinate
+entity_type: paragraph
+bundle: gmap
+label: Coordinate
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    lat_sin: '0.78229784734623'
+    lat_cos: '0.62290454970039'
+    lng_rad: '-0.00073060339131522'
+    value: '51.47144828845736, -0.04186049082030685'
+    lat: '51.47144828845736'
+    lng: '-0.04186049082030685'
+default_value_callback: ''
+settings: {  }
+field_type: geolocation
