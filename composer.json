@@ -39,6 +39,7 @@
         "drupal/field_group_link": "^3.0@RC",
         "drupal/focal_point": "^1.5",
         "drupal/formdazzle": "^2.1",
+        "drupal/geolocation": "^3",
         "drupal/google_tag": "^1.4",
         "drupal/login_emailusername": "^1.2",
         "drupal/menu_admin_per_menu": "^1.3",
