@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oembed.field_p_oe_link
+    - paragraphs.paragraphs_type.oembed
+  module:
+    - url_embed
+id: paragraph.oembed.default
+targetEntityType: paragraph
+bundle: oembed
+mode: default
+content:
+  field_p_oe_link:
+    weight: 0
+    label: hidden
+    settings:
+    third_party_settings: {  }
+    type: url_embed
+    region: content
+hidden:
+  search_api_excerpt: true
