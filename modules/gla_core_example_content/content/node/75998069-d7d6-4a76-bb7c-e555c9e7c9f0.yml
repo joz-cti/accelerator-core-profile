@@ -1,0 +1,90 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 75998069-d7d6-4a76-bb7c-e555c9e7c9f0
+  bundle: generic_content
+  default_langcode: en
+  depends:
+    99d317e6-ef6c-497c-b1bc-24b001e386f4: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Form component (example content)'
+  created:
+    -
+      value: 1628785689
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: ''
+      langcode: en
+  published_at:
+    -
+      value: 1628785776
+  field_c_gc_page_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: cabedd80-12e3-4154-b4f5-29e83b061e47
+          bundle: form
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1628785700
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_form_webform:
+            -
+              target_id: contact
+              default_data: ''
+              status: open
+              open: ''
+              close: ''
+  field_c_gc_remove_breadcrumbs:
+    -
+      value: false
+  field_c_gc_remove_title:
+    -
+      value: false
+  field_c_gc_visually_hide_title:
+    -
+      value: false
+  field_sapi_exclude:
+    -
+      value: false
+  field_teaser:
+    -
+      value: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam.'
+  field_teaser_image:
+    -
+      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
