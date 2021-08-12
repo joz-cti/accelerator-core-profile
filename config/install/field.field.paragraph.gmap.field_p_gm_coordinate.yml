@@ -21,12 +21,12 @@ required: false
 translatable: false
 default_value:
   -
-    lat_sin: '0.78229784734623'
-    lat_cos: '0.62290454970039'
-    lng_rad: '-0.00073060339131522'
-    value: '51.47144828845736, -0.04186049082030685'
-    lat: '51.47144828845736'
-    lng: '-0.04186049082030685'
+    lat_sin: '0.78266878705513'
+    lat_cos: '0.62243840640634'
+    lng_rad: '-0.0013150183249151'
+    value: '51.5055807, -0.075345'
+    lat: '51.5055807'
+    lng: '-0.075345'
 default_value_callback: ''
 settings: {  }
 field_type: geolocation
