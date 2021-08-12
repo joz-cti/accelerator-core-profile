@@ -35,8 +35,6 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: Location
-_core:
-  default_config_hash: Vo421eleDMH-pLgqIYoG9yVuOMcRxvGmeQsWw_qz-cA
 id: paragraph.gmap.default
 targetEntityType: paragraph
 bundle: gmap

@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.gmap
   module:
     - geolocation
-_core:
-  default_config_hash: 0olp-AzE_r39hX1Ov1yaJoVHJPkm-uZbymLFdu7flUg
 id: paragraph.gmap.default
 targetEntityType: paragraph
 bundle: gmap

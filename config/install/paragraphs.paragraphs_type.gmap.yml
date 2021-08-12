@@ -1,8 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: VgUFjVyZZSvQRj6v5wfZ2CP3VaHm9WGUXzBxAiDfxzY
 id: gmap
 label: 'Google map'
 icon_uuid: null
