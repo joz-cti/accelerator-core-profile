@@ -1,4 +1,3 @@
-uuid: 64576820-d1d8-4f25-95ec-5c262170ab44
 langcode: en
 status: true
 dependencies:
@@ -36,8 +35,6 @@ third_party_settings:
         formatter: closed
         required_fields: true
       label: Link
-_core:
-  default_config_hash: BBeC0gqA6bhBlLYBeHX3mQyxvkUHKC7VGrzq9xuIQPI
 id: paragraph.iframe.default
 targetEntityType: paragraph
 bundle: iframe

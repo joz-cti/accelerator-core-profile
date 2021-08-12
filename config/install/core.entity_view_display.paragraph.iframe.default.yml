@@ -1,4 +1,3 @@
-uuid: 40339dd3-5619-489f-85c3-bee57ba0a00e
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - paragraphs.paragraphs_type.iframe
   module:
     - iframe
-_core:
-  default_config_hash: rVzJuQFGKbmGCAroXcuiyqo4hKB97De4KT6zQWPpqCo
 id: paragraph.iframe.default
 targetEntityType: paragraph
 bundle: iframe

@@ -1,4 +1,3 @@
-uuid: 511daeda-77ab-4801-90f7-30c155faa059
 langcode: en
 status: true
 dependencies:
@@ -12,8 +11,6 @@ third_party_settings:
   datalayer:
     expose: 0
     label: field_p_if_iframe
-_core:
-  default_config_hash: 5qq6msjgVk0M5dI2bN-UzHORNuw51e7pgXYkqUVY41I
 id: paragraph.iframe.field_p_if_iframe
 field_name: field_p_if_iframe
 entity_type: paragraph
