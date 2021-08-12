@@ -58,6 +58,7 @@ install:
   - node
   - page_cache
   - paragraphs
+  - paragraphs_type_permissions
   - password_policy
   - password_policy_characters
   - password_policy_character_types
