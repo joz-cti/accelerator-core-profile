@@ -17,9 +17,11 @@ entity_type: paragraph
 bundle: button
 label: Style
 description: 'Leave blank to use the standard style.'
-required: false
+required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: outline
 default_value_callback: ''
 settings: {  }
 field_type: list_string
