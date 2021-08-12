@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: iframe
+label: Iframe
+icon_uuid: null
+icon_default: null
+description: 'Display another URL inside this component'
+behavior_plugins: {  }

@@ -45,6 +45,7 @@ install:
   - gla_core_users
   - google_tag
   - hal
+  - iframe
   - inline_form_errors
   - link
   - login_emailusername

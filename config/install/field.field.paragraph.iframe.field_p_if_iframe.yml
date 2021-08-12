@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_if_iframe
+    - paragraphs.paragraphs_type.iframe
+  module:
+    - datalayer
+    - iframe
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_if_iframe
+id: paragraph.iframe.field_p_if_iframe
+field_name: field_p_if_iframe
+entity_type: paragraph
+bundle: iframe
+label: Iframe
+description: 'To allow the iframe to resize automatically to fit its contents, ask the maintainers of the page being embedded to include <a href="https://github.com/davidjbradshaw/iframe-resizer" target="_blank" rel="noopener">David J. Bradshaw''s iframe-resizer script</a>. A copy of this script can be hosted from <code>[site:url]themes/custom/rutherford/libraries/iframe-resizer/js/iframeResizer.contentWindow.min.js</code>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: null
+  frameborder: '0'
+  scrolling: auto
+  transparency: '1'
+  allowfullscreen: '1'
+  tokensupport: '2'
+  title: null
+  height: null
+  width: null
+field_type: iframe
