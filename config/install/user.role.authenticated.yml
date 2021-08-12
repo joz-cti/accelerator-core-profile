@@ -14,6 +14,7 @@ permissions:
   - 'view paragraph content button'
   - 'view paragraph content buttons'
   - 'view paragraph content cta'
+  - 'view paragraph content form'
   - 'view paragraph content gmap'
   - 'view paragraph content iframe'
   - 'view paragraph content media_item'
