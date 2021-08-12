@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_gm_coordinate
+    - paragraphs.paragraphs_type.gmap
+  module:
+    - datalayer
+    - geolocation
+third_party_settings:
+  datalayer:
+    expose: 0
+    label: field_p_gm_coordinate
+id: paragraph.gmap.field_p_gm_coordinate
+field_name: field_p_gm_coordinate
+entity_type: paragraph
+bundle: gmap
+label: Coordinate
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    lat_sin: '0.78266878705513'
+    lat_cos: '0.62243840640634'
+    lng_rad: '-0.0013150183249151'
+    value: '51.5055807, -0.075345'
+    lat: '51.5055807'
+    lng: '-0.075345'
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

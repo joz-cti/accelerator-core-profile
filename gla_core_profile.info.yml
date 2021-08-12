@@ -41,6 +41,8 @@ install:
   - field_ui
   - focal_point
   - formdazzle
+  - geolocation
+  - geolocation_google_maps
   - gla_core_rich_text
   - gla_core_users
   - google_tag

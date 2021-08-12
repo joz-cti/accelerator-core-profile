@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: gmap
+label: 'Google map'
+icon_uuid: null
+icon_default: null
+description: 'Adds a Google Maps embed to a page'
+behavior_plugins: {  }
