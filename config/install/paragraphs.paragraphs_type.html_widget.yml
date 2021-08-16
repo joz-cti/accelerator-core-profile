@@ -1,0 +1,10 @@
+uuid: 02ca662b-164e-4b84-b293-c06a10a012de
+langcode: en
+status: true
+dependencies: {  }
+id: html_widget
+label: 'HTML Widget'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

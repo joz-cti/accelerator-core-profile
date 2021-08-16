@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.html_widget.field_p_htmlw_code
+    - paragraphs.paragraphs_type.html_widget
+  module:
+    - codemirror_editor
+id: paragraph.html_widget.default
+targetEntityType: paragraph
+bundle: html_widget
+mode: default
+content:
+  field_p_htmlw_code:
+    weight: 0
+    settings:
+      rows: 10
+      placeholder: ''
+      mode: text/html
+      lineWrapping: true
+      lineNumbers: true
+      autoCloseTags: true
+      styleActiveLine: true
+      toolbar: false
+      foldGutter: false
+    third_party_settings: {  }
+    type: codemirror_editor
+    region: content
+hidden:
+  created: true
+  status: true

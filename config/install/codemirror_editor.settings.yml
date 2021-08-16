@@ -1,0 +1,8 @@
+cdn: false
+minified: false
+theme: default
+language_modes:
+  - css
+  - htmlmixed
+  - javascript
+  - yaml

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.html_widget.field_p_htmlw_code
+    - paragraphs.paragraphs_type.html_widget
+id: paragraph.html_widget.default
+targetEntityType: paragraph
+bundle: html_widget
+mode: default
+content:
+  field_p_htmlw_code:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  search_api_excerpt: true
