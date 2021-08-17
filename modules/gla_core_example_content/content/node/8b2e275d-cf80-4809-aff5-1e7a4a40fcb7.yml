@@ -237,7 +237,7 @@ default:
       value: false
   field_teaser:
     -
-      value: 'Cras sollicitudin felis urna. Nulla iaculis ac magna at dictum. Aenean auctor, diam sed dictum scelerisque, eros arcu molestie enim, non mollis turpis massa non ligula. '
+      value: 'Cras sollicitudin felis urna. Nulla iaculis ac magna at dictum. Aenean auctor, diam sed dictum scelerisque, eros arcu molestie enim, non mollis turpis massa non ligula.'
   field_teaser_image:
     -
       entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
