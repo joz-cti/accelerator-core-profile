@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.button.field_p_b_icon
     - field.field.paragraph.button.field_p_b_link
     - field.field.paragraph.button.field_p_b_style
     - paragraphs.paragraphs_type.button
@@ -26,5 +25,4 @@ content:
     type: link
     region: content
 hidden:
-  field_p_b_icon: true
   field_p_b_style: true

@@ -16,7 +16,7 @@ field_name: field_p_b_style
 entity_type: paragraph
 bundle: button
 label: Style
-description: 'Leave blank to use the standard style.'
+description: ''
 required: true
 translatable: false
 default_value:
