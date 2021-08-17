@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_htmlw_code
+    - paragraphs.paragraphs_type.html_widget
+id: paragraph.html_widget.field_p_htmlw_code
+field_name: field_p_htmlw_code
+entity_type: paragraph
+bundle: html_widget
+label: Code
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
