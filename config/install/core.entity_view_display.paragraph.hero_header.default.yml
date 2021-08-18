@@ -36,7 +36,7 @@ content:
     region: content
   field_p_hero_header_height:
     weight: 6
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
