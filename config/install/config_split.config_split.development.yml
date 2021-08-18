@@ -6,6 +6,8 @@ label: Development
 description: 'Development related modules and configuration.'
 folder: ../config/splits/development
 module:
+  config_update: 0
+  config_update_ui: 0
   devel: 0
   environment_indicator_ui: 0
   field_ui: 0
