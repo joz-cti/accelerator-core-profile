@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_header.field_p_hero_header_components
+    - field.field.paragraph.hero_header.field_p_hero_header_heading
+    - field.field.paragraph.hero_header.field_p_hero_header_height
+    - field.field.paragraph.hero_header.field_p_hero_header_image
+    - field.field.paragraph.hero_header.field_p_hero_header_theme
+    - field.field.paragraph.hero_header.field_p_hero_header_video
+    - paragraphs.paragraphs_type.hero_header
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.hero_header.default
+targetEntityType: paragraph
+bundle: hero_header
+mode: default
+content:
+  field_p_hero_header_components:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_p_hero_header_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_hero_header_height:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_p_hero_header_image:
+    type: entity_reference_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_p_hero_header_theme:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_p_hero_header_video:
+    type: entity_reference_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true
