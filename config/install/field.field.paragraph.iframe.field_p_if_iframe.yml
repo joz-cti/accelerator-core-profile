@@ -16,7 +16,7 @@ field_name: field_p_if_iframe
 entity_type: paragraph
 bundle: iframe
 label: Iframe
-description: 'To allow the iframe to resize automatically to fit its contents, ask the maintainers of the page being embedded to include <a href="https://github.com/davidjbradshaw/iframe-resizer" target="_blank" rel="noopener">David J. Bradshaw''s iframe-resizer script</a>. A copy of this script can be hosted from <code>[site:url]themes/custom/rutherford/libraries/iframe-resizer/js/iframeResizer.contentWindow.min.js</code>'
+description: 'To allow the iframe to resize automatically to fit its contents, ask the maintainers of the page being embedded to include <a href="https://github.com/davidjbradshaw/iframe-resizer" target="_blank" rel="noopener">David J. Bradshaw''s iframe-resizer script</a>. A copy of this script can be hosted from <code>[site:url]themes/estate/gla_core_theme/libraries/iframe-resizer/js/iframeResizer.contentWindow.min.js</code>'
 required: true
 translatable: false
 default_value: {  }

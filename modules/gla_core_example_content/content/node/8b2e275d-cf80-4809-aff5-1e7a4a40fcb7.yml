@@ -143,7 +143,7 @@ default:
               value: true
           field_p_rt_rich_text:
             -
-              value: "<p>Notice how the SlideShare embed below is a different size to the one above and is also missing the text below it? I think this is because it is a 'secret' (unlisted) SlideShare item, and presumably that affects how it is embedded. The embed code all comes from SlideShare so I don't know if this is something that we will be able to fix. However, I noticed that <a href=\"https://www.london.gov.uk/coronavirus/londons-recovery-coronavirus-crisis/recovering-coronavirus-it-begins-you\">the D7 site does not have this issue</a>, which complicates things a little!</p>\r\n"
+              value: "<p>Notice how the SlideShare embed below is a different size to the one above and is also missing the text below it? I think this is because it is a 'secret' (unlisted) SlideShare item, and that <a href=\"https://github.com/w8tcha/CKEditor-oEmbed-Plugin/issues/68\">prevents it being used with oEmbed</a>. I noticed that <a href=\"https://www.london.gov.uk/coronavirus/londons-recovery-coronavirus-crisis/recovering-coronavirus-it-begins-you\">the D7 site does not have this issue</a>, but I think that is because that SlideShare item is being embedded manually via copy-and-pasting HTML from SlideShare. To allow that on the D9 site we would need to go ahead with building the HTML widget&nbsp;component (<a href=\"https://london.atlassian.net/browse/DERP-236\">DERP-236</a>).</p>"
               format: full_html
     -
       entity:
@@ -237,7 +237,7 @@ default:
       value: false
   field_teaser:
     -
-      value: 'Cras sollicitudin felis urna. Nulla iaculis ac magna at dictum. Aenean auctor, diam sed dictum scelerisque, eros arcu molestie enim, non mollis turpis massa non ligula. '
+      value: 'Cras sollicitudin felis urna. Nulla iaculis ac magna at dictum. Aenean auctor, diam sed dictum scelerisque, eros arcu molestie enim, non mollis turpis massa non ligula.'
   field_teaser_image:
     -
       entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4

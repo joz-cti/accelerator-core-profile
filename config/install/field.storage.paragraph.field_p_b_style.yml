@@ -14,7 +14,7 @@ settings:
       value: outline
       label: Outline
     -
-      value: block
+      value: solid
       label: Solid
   allowed_values_function: ''
 module: options

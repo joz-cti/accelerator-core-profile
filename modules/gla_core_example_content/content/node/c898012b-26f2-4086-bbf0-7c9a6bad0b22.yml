@@ -1,0 +1,110 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c898012b-26f2-4086-bbf0-7c9a6bad0b22
+  bundle: generic_content
+  default_langcode: en
+  depends:
+    99d317e6-ef6c-497c-b1bc-24b001e386f4: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'HTML Widget component (example content)'
+  created:
+    -
+      value: 1629130077
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: ''
+      langcode: en
+  published_at:
+    -
+      value: 1629130159
+  field_c_gc_page_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 86315d95-8074-48f2-b621-a49691764603
+          bundle: html_widget
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629130088
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_htmlw_code:
+            -
+              value: '<a href="https://example.com">Example External Link</a>'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 060fba8b-8c36-403b-b98d-1d5fd239cb0f
+          bundle: html_widget
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629135501
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_htmlw_code:
+            -
+              value: '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Last year <a href="https://twitter.com/LDN_VRU?ref_src=twsrc%5Etfw">@LDN_VRU</a> recruited 10 young Londoners aged 15-21 to form our first Young People’s Action Group. The task? To put young people at the heart of our work to reduce violence across our city. Fantastic to meet with them today and thank them for all their incredible work. <a href="https://t.co/5sI7nwMEnQ">pic.twitter.com/5sI7nwMEnQ</a></p>&mdash; Mayor of London, Sadiq Khan (@MayorofLondon) <a href="https://twitter.com/MayorofLondon/status/1425107493831782403?ref_src=twsrc%5Etfw">August 10, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+  field_c_gc_remove_breadcrumbs:
+    -
+      value: false
+  field_c_gc_remove_title:
+    -
+      value: false
+  field_c_gc_visually_hide_title:
+    -
+      value: false
+  field_sapi_exclude:
+    -
+      value: false
+  field_teaser:
+    -
+      value: 'Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.'
+  field_teaser_image:
+    -
+      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4

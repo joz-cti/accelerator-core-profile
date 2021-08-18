@@ -3,13 +3,11 @@ status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_p_b_icon
-field_name: field_p_b_icon
+id: paragraph.field_p_htmlw_code
+field_name: field_p_htmlw_code
 entity_type: paragraph
-type: string
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

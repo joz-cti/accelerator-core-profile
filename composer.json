@@ -19,6 +19,7 @@
         "drupal/civicccookiecontrol": "^4.4",
         "drupal/ckeditor_codemirror": "^2.3",
         "drupal/ckeditor_config": "^3.0",
+        "drupal/codemirror_editor": "^1.7",
         "drupal/components": "^2.4",
         "drupal/config_filter": "^2.2",
         "drupal/config_ignore": "^2.3",
@@ -67,6 +68,7 @@
         "drush/drush": "^10",
         "gla/gla_core_theme": "^1.2",
         "npm-asset/chosen-js": "^1.8",
+        "npm-asset/codemirror": "^5.62",
         "npm-asset/select2": "^4.0",
         "vlucas/phpdotenv": "^5.1"
     },
@@ -140,10 +142,12 @@
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
-            "@clearNonCustomDrupalDependencies"
+            "@clearNonCustomDrupalDependencies",
+            "rm composer.lock"
         ],
         "post-update-cmd": [
-            "@clearNonCustomDrupalDependencies"
+            "@clearNonCustomDrupalDependencies",
+            "rm composer.lock"
         ],
         "clearNonCustomDrupalDependencies": [
             "rm -rf core",
