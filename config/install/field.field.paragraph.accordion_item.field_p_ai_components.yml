@@ -6,7 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.accordion_item
     - paragraphs.paragraphs_type.button
-    - paragraphs.paragraphs_type.blockquote
+    - paragraphs.paragraphs_type.media_item
   module:
     - datalayer
     - entity_reference_revisions
@@ -32,7 +32,6 @@ settings:
       accordion_item: accordion_item
       button: button
       accordion: accordion
-      blockquote: blockquote
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -40,9 +39,6 @@ settings:
       accordion_item:
         enabled: true
         weight: 14
-      blockquote:
-        enabled: true
-        weight: 0
       button:
         enabled: true
         weight: 15
