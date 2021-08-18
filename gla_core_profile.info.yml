@@ -85,9 +85,7 @@ install:
   - username_enumeration_prevention
   - views
   - webform
-
 themes:
-  - seven
   - bartik
   - claro
   - gla_core_theme
