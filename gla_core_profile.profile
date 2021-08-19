@@ -5,6 +5,8 @@
  * Code and configuration relating to the Core profile.
  */
 
+use Drupal\Core\Entity\EntityInterface;
+
 /**
  * Implements hook_preprocess_page().
  */
@@ -19,6 +21,18 @@ function gla_core_profile_preprocess_page(&$variables) {
     // via config.
     $active_theme = \Drupal::config('system.theme')->get('default');
     $variables['#attached']['library'][] = $active_theme . '/admin-styles';
+  }
+
+  $route = \Drupal::routeMatch()->getCurrentRouteMatch();
+
+  if ($route->getRouteName() == 'entity.node.canonical') {
+    $node = $route->getParameter('node');
+
+    if ($node->getType() == 'generic_content') {
+      if (!$node->field_c_gc_remove_title->isEmpty() && $node->field_c_gc_remove_title->value) {
+        unset($variables['page']['content']['pagetitle']);
+      }
+    }
   }
 }
 
@@ -47,4 +61,58 @@ function gla_core_profile_install_content() {
   // Note that the example content module will only create new content on a
   // trash and rebuild/initial site creation.
   \Drupal::service('module_installer')->install(['gla_core_example_content']);
+}
+
+/**
+ * Set a boolean field to TRUE if a particular paragraph is present.
+ *
+ * This is useful for automatically hiding page titles and breadcrumbs when
+ * components that must be flush with the site header are used, or hiding the
+ * main page title if a component that provides a H1 is being used.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $node
+ *   The entity type definition.
+ * @param array $paragraphs_objects
+ *   The paragraph object.
+ * @param array $target_boolean_fields
+ *   The target fields.
+ * @param array $target_paragraphs
+ *   The target paragraphs.
+ */
+function _check_booleans_if_paragraphs_present(EntityInterface $node, array $paragraphs_objects, array $target_boolean_fields, array $target_paragraphs) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  foreach ($paragraphs_objects as $paragraph) {
+    if (in_array($paragraph->bundle(), $target_paragraphs)) {
+      foreach ($target_boolean_fields as $field) {
+        if ($node->$field->value !== 1) {
+          $node->$field->value = 1;
+
+          \Drupal::messenger()
+            ->addStatus(t("The '@label' field was automatically checked as a @component component is in use on this page.", [
+              '@label' => $node->$field->getFieldDefinition()->getLabel(),
+              '@component' => $paragraph->getParagraphType()->label(),
+            ]));
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function gla_core_profile_node_presave(EntityInterface $node) {
+  if ($node->hasField('field_c_gc_page_components')) {
+    if ($paragraph_field_items = $node->get('field_c_gc_page_components')->getValue()) {
+      // If certain page components are in use then we may want to automatically
+      // tick the 'hide page title' or 'hide page breadcrumbs' fields on behalf
+      // of the CMS user, in case they have forgotten to do so.
+      $paragraph_storage = \Drupal::entityTypeManager()->getStorage('paragraph');
+      $ids = array_column($paragraph_field_items, 'target_id');
+      $paragraphs_objects = $paragraph_storage->loadMultiple($ids);
+
+      _check_booleans_if_paragraphs_present($node, $paragraphs_objects, ['field_c_gc_remove_title'], ['hero_header']);
+      _check_booleans_if_paragraphs_present($node, $paragraphs_objects, ['field_c_gc_remove_title'], ['page_header']);
+    }
+  }
 }

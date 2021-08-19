@@ -22,6 +22,7 @@ install:
   - ckeditor_config
   - codemirror_editor
   - components
+  - config
   - config_filter
   - config_ignore
   - config_pages
@@ -35,6 +36,7 @@ install:
   - disable_html5_validation
   - dynamic_page_cache
   - embed
+  - entity_browser
   - entity_reference_display
   - entity_usage
   - environment_indicator
@@ -85,9 +87,7 @@ install:
   - username_enumeration_prevention
   - views
   - webform
-
 themes:
-  - seven
   - bartik
   - claro
   - gla_core_theme

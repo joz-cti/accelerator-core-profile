@@ -1,0 +1,554 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 58d46c15-e641-4bf4-96ef-8c776992ae93
+  bundle: generic_content
+  default_langcode: en
+  depends:
+    99d317e6-ef6c-497c-b1bc-24b001e386f4: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Accordion (example content)'
+  created:
+    -
+      value: 1629213393
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: ''
+      langcode: en
+  published_at:
+    -
+      value: 1629213813
+  field_c_gc_page_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7d7250c1-f134-4d8a-a458-d870b0391b1f
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629216009
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_rt_rich_text:
+            -
+              value: '<p>Let''s test the Accordion component, including having multiple accordions on a page.</p>'
+              format: full_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: af7d2d32-0227-4bd7-9fd2-1a8c1d888648
+          bundle: accordion
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629213627
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_a_items:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dfd9be84-810d-4fca-9911-e6c21c21c6cc
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629213627
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: b174878c-5ce6-46ce-8095-84f8c8bc0d3a
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629213712
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Vivamus blandit erat et dolor tempus luctus. Sed vestibulum, nulla ac porttitor faucibus, mauris nibh congue lacus, quis pellentesque ante magna eget nisl. Maecenas sit amet quam varius, gravida arcu auctor, semper neque. Aliquam finibus mi quis leo volutpat luctus. Vestibulum placerat pharetra nunc, nec aliquam nisi. Duis sollicitudin elit sit amet orci mattis, ac rhoncus urna ultrices. Sed pretium, ex et efficitur tempor, purus urna rutrum sapien, id feugiat lectus elit non purus. Vivamus euismod ipsum a condimentum vehicula. Nulla id pharetra libero, porttitor vulputate lectus. Quisque in velit interdum, vehicula odio congue, pellentesque velit. Nulla luctus justo eu tellus sagittis pellentesque. Morbi et tristique diam.</p>\r\n\r\n<p>Quisque eget nisl quis sem mattis finibus. Vestibulum interdum nisi sed lacus dapibus lobortis. Cras auctor orci eget ex venenatis, sed gravida nisl vulputate. Nunc ac mi nisl. Etiam fermentum rutrum sollicitudin. Phasellus ac lacinia lorem. In hendrerit vel metus vitae interdum. Vivamus ante diam, elementum sed purus eu, iaculis placerat arcu. Cras ultricies, libero ut mollis maximus, arcu nulla interdum leo, ac tempus ex tellus ac tellus. In hac habitasse platea dictumst. Pellentesque imperdiet eros ac metus pulvinar, a pellentesque sapien sagittis. Donec tempus, purus a feugiat posuere, lectus justo rutrum urna, nec sodales nisi eros id neque. Vivamus tempus velit vitae efficitur venenatis. Nunc mi nibh, dapibus in neque et, condimentum luctus tortor. Suspendisse rhoncus massa nisi, sed consequat velit ornare sed. Aliquam bibendum eget turpis eu ultrices.</p>\r\n"
+                              format: full_html
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 386bad9e-6841-4427-8177-5baeea597fa0
+                          bundle: oembed
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629213767
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_oe_link:
+                            -
+                              uri: 'https://twitter.com/MayorofLondon/status/1425107493831782403'
+                              title: ''
+                              options: {  }
+                  field_p_ai_heading:
+                    -
+                      value: 'What is Coronavirus?'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 861fff42-de7e-4cb4-823b-57cd233bbfd9
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629213636
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 5df00616-1cf2-4782-a9a4-23417f5be7db
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629213725
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Mauris quis neque erat. Morbi interdum velit id odio fringilla maximus. Duis egestas nunc nec nisi placerat, non lacinia mi vehicula. Vestibulum non consequat leo, ut pellentesque dui. Sed ut ex et diam hendrerit vestibulum. Phasellus dui lorem, porta eu sem non, tempor faucibus libero. Nunc cursus fringilla finibus. Aenean maximus blandit vehicula. Integer nec arcu eu sem cursus accumsan. Curabitur imperdiet sed metus a eleifend. Pellentesque urna sapien, pulvinar quis tristique id, aliquet ut enim. Aliquam sodales odio tellus, sed pharetra lacus venenatis a. Proin hendrerit arcu non lorem pretium pharetra. Ut aliquam luctus tempus. Cras scelerisque ut nibh et consectetur. Nunc vitae rhoncus felis, vitae consectetur ante.</p>\r\n"
+                              format: full_html
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 67729abf-83a5-4f9c-84ed-80016d5791af
+                          bundle: oembed
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629213780
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_oe_link:
+                            -
+                              uri: 'https://www.slideshare.net/GLAWeb/london-housing-strategy'
+                              title: ''
+                              options: {  }
+                  field_p_ai_heading:
+                    -
+                      value: 'Who needs to wear a face covering?'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 080e00b1-7d7f-4eee-b9f8-9bd55e1edd56
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629213665
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: b71b674e-442d-4b4b-a55d-ba4224380460
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629213733
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Nullam nisl sapien, commodo non odio placerat, efficitur commodo lorem. In at vehicula lectus, vel facilisis ligula. Proin pretium nibh turpis, eget vehicula risus fermentum porta. Nullam non malesuada arcu. Nunc vitae quam id odio imperdiet sodales et eu nisl. Aliquam vel ultricies odio, et tempus enim. Suspendisse sit amet risus vel nibh pharetra pulvinar. Suspendisse massa metus, dictum sit amet vulputate quis, posuere sit amet erat. Maecenas sed pretium tellus. Aenean sed condimentum nulla, eu cursus ante. Quisque porttitor erat consequat laoreet sollicitudin. Suspendisse potenti.</p>\r\n"
+                              format: full_html
+                  field_p_ai_heading:
+                    -
+                      value: 'Is wearing a face covering mandatory?'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9c4123de-4d11-43d1-9d2f-eb84b1a8640a
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629213671
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 71a2bb40-97ac-41c3-a5f3-a748b0056a72
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629213744
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Vestibulum dolor libero, tempor id vestibulum eget, venenatis vel neque. Maecenas viverra erat vitae pretium scelerisque. Vestibulum quis urna venenatis, tristique libero et, tincidunt nulla. Cras ac turpis quis nisl eleifend lacinia ac eu mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse nulla ex, vehicula vitae sollicitudin a, pharetra non orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque porta nunc nibh, eget semper erat ultricies nec. In mattis erat vel lacus gravida finibus. Morbi pharetra rhoncus euismod. Pellentesque auctor arcu in massa aliquam, in aliquam quam interdum.</p>\r\n"
+                              format: full_html
+                  field_p_ai_heading:
+                    -
+                      value: 'Can I use public transport?'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 620b0de1-0c0d-4470-ae29-e5e4881fbe13
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629213691
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 3e70c7ab-dcf3-4df7-85d7-a34eb0b3872c
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629213754
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Ut vitae nibh luctus, scelerisque nibh eu, placerat arcu. Phasellus hendrerit ullamcorper ligula feugiat mollis. Sed eu elit magna. Nam odio nibh, sagittis ac tellus ut, dignissim sollicitudin ex. Phasellus a suscipit urna. Duis consectetur purus vel purus egestas convallis. Etiam condimentum nibh at leo convallis, eu tempus turpis suscipit.</p>\r\n"
+                              format: full_html
+                  field_p_ai_heading:
+                    -
+                      value: 'What is NHS Test and Trace and how does it work?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ae4ab8a0-f549-4a39-ab41-805940387622
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629216049
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_rt_rich_text:
+            -
+              value: "<h3>Linking to accordion items</h3>\r\n\r\n<p>As a user opens accordion items, the query string (the bit that comes after the '?' in the URL) within the URL of the page is updated. If the user reloads the page or sends a link to a friend or colleague then the same accordions will open, so they won't lose their place or have to explain to their contact which accordions to open to see the right content.</p>\r\n\r\n<p>Each accordion item is also given an HTML <code>id</code>&nbsp;attribute in the same way that headings inside a Rich text component are. This means we can use the heading IDs with a hash (#) as jump links/anchor links to scroll to a particular accordion item.</p>\r\n\r\n<p>We can combine these two techniques to make a link that both opens and scrolls the user to an accordion item. To make one of these links, click the accordion(s) you want to open, then add the heading after a hash to the end of the URL. You will end up with a URL that looks something like this: <code>https://london.gov.uk/path-to-content<strong>?ac-14=%5B13%5D#what-is-nhs-test-and-trace-and-how-does-it-work</strong></code>.&nbsp;</p>\r\n\r\n<h4>Why do we need to use two approaches? Can't the hash or the query string open&nbsp;<em>and</em>&nbsp;scroll to the accordion item?</h4>\r\n\r\n<p>It's better to use two approaches, even if it results in a bit longer URLs and more copy and pasting for CMS users. Here's why:</p>\r\n\r\n<ul>\r\n\t<li>Each page can only have one hash, so if we used the hash we'd only be able to store the state of the most recently opened accordion item. By using a query string we can store the state of every accordion on the page (if it has been interacted with), which is useful for pages with multiple accordions on them</li>\r\n\t<li>So why not use the query string approach to do the opening <em>and</em>&nbsp;the scrolling? By using the hash to do the scrolling we are benefiting from the built-in ability of the browser to scroll to an ID when it sees a matching hash in the URL. It's not wise to ignore this functionality and try and build it ourselves using the query string approach. Our approach would not perform as well, and will be more likely to break or cause bugs compared to the browser's built-in approach.&nbsp;We would also run into issues where if there were multiple open accordions on the page we could only scroll to one of them, and it might not be the one that the user wanted to scroll to.</li>\r\n</ul>\r\n"
+              format: full_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 64b7f2b6-4685-46b4-949a-f22a792db775
+          bundle: accordion
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629216077
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_a_items:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: addc524a-02b5-4a5b-afb7-942baa04505b
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629216077
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: e81a0516-4444-44a8-aa9b-b6682c458283
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629216102
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Wow, the heading is longer than the content!</p>\r\n"
+                              format: full_html
+                  field_p_ai_heading:
+                    -
+                      value: 'Suspendisse et tristique justo, quis scelerisque nisi. Morbi imperdiet odio non pulvinar fringilla. Fusce non hendrerit sem. Nunc cursus semper.'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3cae6b89-4a56-4332-9e75-88c7e494b343
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629216116
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 29ceeac1-e8a2-4cc0-ae18-25e91e47f141
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629216147
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Here the content is much longer than the heading.</p>\r\n"
+                              format: full_html
+                  field_p_ai_heading:
+                    -
+                      value: Lipsum
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a3f94f01-bdf8-447e-99b5-124555150914
+                  bundle: accordion_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629216251
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_ai_components:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 82efa526-edcc-481c-a62a-9de99786150d
+                          bundle: rich_text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629216264
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_rt_rich_text:
+                            -
+                              value: "<p>Suspendisse aliquet massa nulla, quis laoreet neque laoreet non. Ut semper tellus non turpis tristique, finibus sagittis nunc elementum. Nunc non nibh gravida, accumsan sapien eget, pellentesque lorem. Etiam vehicula ultrices tortor, ac varius velit aliquet consectetur. Vivamus dignissim pharetra cursus. Phasellus bibendum, ante et semper ornare, arcu nulla finibus augue, et placerat tortor libero vel diam. Donec suscipit commodo volutpat. Mauris varius nisi non orci porta condimentum. Quisque pharetra facilisis quam ac bibendum. Etiam lorem enim, rutrum quis lacus nec, imperdiet aliquam tellus. Etiam urna leo, convallis vitae dui ac, aliquam egestas tellus. Mauris efficitur consectetur diam et aliquet. Mauris ornare feugiat dolor, tristique lobortis justo.</p>\r\n\r\n<p>Morbi sem felis, interdum a pharetra sed, suscipit vulputate neque. Nam ut quam non lacus volutpat commodo id eget risus. Nullam scelerisque cursus odio, nec aliquam sapien. Sed sollicitudin euismod interdum. Donec sed ex id lacus pulvinar pulvinar sed sit amet mauris. Sed vestibulum malesuada erat eget posuere. Suspendisse luctus et enim quis dignissim.</p>\r\n"
+                              format: full_html
+                  field_p_ai_heading:
+                    -
+                      value: 'Donec vel ex tellus. Vivamus semper vulputate vestibulum'
+  field_c_gc_remove_breadcrumbs:
+    -
+      value: false
+  field_c_gc_remove_title:
+    -
+      value: false
+  field_c_gc_visually_hide_title:
+    -
+      value: false
+  field_sapi_exclude:
+    -
+      value: false
+  field_teaser:
+    -
+      value: 'Morbi ex dui, imperdiet eget arcu a, laoreet posuere lacus. Donec aliquam hendrerit magna, id semper leo ultricies at. '
+  field_teaser_image:
+    -
+      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
