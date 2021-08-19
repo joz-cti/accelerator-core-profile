@@ -25,4 +25,4 @@ jobs:
           php_extensions: gd
 
       - name: Test codebase with grumPHP
-        run: ./vendor/bin/grumphp run
+        run: ./vendor/bin/grumphp run && patch && composer install -vvv
