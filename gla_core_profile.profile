@@ -5,6 +5,8 @@
  * Code and configuration relating to the Core profile.
  */
 
+use Drupal\Core\Entity\EntityInterface;
+
 /**
  * Implements hook_preprocess_page().
  */
