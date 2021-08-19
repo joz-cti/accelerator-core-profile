@@ -1,4 +1,4 @@
-name: Drupal Code Quality
+name: Drupal Code Qualityds
 on: [pull_request]
 jobs:
   Drupal-Code-Quality:
