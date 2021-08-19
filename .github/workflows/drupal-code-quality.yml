@@ -15,12 +15,10 @@ jobs:
       - run: echo "The workflow is now ready to test your code on the runner."
       - run: cd ${{ github.workspace }}
 
-      - name: Test codebase with grumPHP
-        run: patch && composer install -vvv
-
       - run: echo "Create auth.json file for private packagist to consume using a Github Secret."
       - run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
       - name: Install composer dependencies
+        run: composer install
         uses: php-actions/composer@v6
         with:
           php_version: 8.0
@@ -28,4 +26,4 @@ jobs:
           php_extensions: gd
 
       - name: Test codebase with grumPHP
-        run: ./vendor/bin/grumphp run && patch && composer install -vvv
+        run: ./vendor/bin/grumphp run
