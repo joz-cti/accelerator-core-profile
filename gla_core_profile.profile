@@ -57,9 +57,13 @@ function gla_core_profile_install_content() {
  * main page title if a component that provides a H1 is being used.
  *
  * @param \Drupal\Core\Entity\EntityInterface $node
+ *   The entity type definition.
  * @param array $paragraphs_objects
+ *   The paragraph object.
  * @param array $target_boolean_fields
+ *   The target fields.
  * @param array $target_paragraphs
+ *   The target paragraphs.
  */
 function _check_booleans_if_paragraphs_present(EntityInterface $node, array $paragraphs_objects, array $target_boolean_fields, array $target_paragraphs) {
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
