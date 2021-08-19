@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: form
+label: Form
+icon_uuid: null
+icon_default: null
+description: 'Embed webforms onto the page.'
+behavior_plugins: {  }

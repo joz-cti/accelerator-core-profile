@@ -6,6 +6,7 @@ dependencies:
     - node.type.generic_content
     - paragraphs.paragraphs_type.accordion_item
     - paragraphs.paragraphs_type.button
+    - paragraphs.paragraphs_type.oembed
   module:
     - datalayer
     - entity_reference_revisions
@@ -44,6 +45,9 @@ settings:
         weight: -35
         enabled: false
       media_item:
+        weight: -28
+        enabled: false
+      oembed:
         weight: -28
         enabled: false
       rich_text:

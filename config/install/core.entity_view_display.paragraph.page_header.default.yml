@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_header.field_p_page_header_heading
+    - field.field.paragraph.page_header.field_p_page_header_image
+    - paragraphs.paragraphs_type.page_header
+id: paragraph.page_header.default
+targetEntityType: paragraph
+bundle: page_header
+mode: default
+content:
+  field_p_page_header_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_page_header_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

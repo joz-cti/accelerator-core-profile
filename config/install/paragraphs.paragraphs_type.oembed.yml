@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: oembed
+label: oEmbed
+icon_uuid: null
+icon_default: null
+description: 'Embed content from an oEmbed provider (Twitter, SlideShare, etc) inside this component'
+behavior_plugins: {  }

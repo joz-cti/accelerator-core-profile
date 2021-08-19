@@ -16,10 +16,13 @@ install:
   - bamboo_twig
   - block
   - chosen
+  - civiccookiecontrol
   - ckeditor
   - ckeditor_codemirror
   - ckeditor_config
+  - codemirror_editor
   - components
+  - config
   - config_filter
   - config_ignore
   - config_pages
@@ -32,6 +35,8 @@ install:
   - default_content
   - disable_html5_validation
   - dynamic_page_cache
+  - embed
+  - entity_browser
   - entity_reference_display
   - entity_usage
   - environment_indicator
@@ -39,45 +44,50 @@ install:
   - field_ui
   - focal_point
   - formdazzle
+  - geolocation
+  - geolocation_google_maps
   - gla_core_rich_text
-  - google_tag
   - gla_core_users
+  - google_tag
   - hal
+  - iframe
   - inline_form_errors
-  - media_library
+  - link
   - login_emailusername
+  - media_library
   - menu_admin_per_menu
   - metatag
   - multiline_config
   - node
   - page_cache
   - paragraphs
+  - paragraphs_type_permissions
   - password_policy
-  - path
-  - publication_date
   - password_policy_characters
   - password_policy_character_types
   - password_policy_history
   - password_policy_length
   - password_policy_username
+  - path
+  - publication_date
   - r4032login
   - rabbit_hole
   - redirect_after_login
   - replicate
   - replicate_ui
   - responsive_image
-  - serialization
   - scheduler
   - search_api_exclude_entity
   - select2
+  - serialization
   - taxonomy
   - twig_field_value
+  - twigsuggest
+  - url_embed
   - username_enumeration_prevention
   - views
   - webform
-
 themes:
-  - seven
   - bartik
   - claro
   - gla_core_theme

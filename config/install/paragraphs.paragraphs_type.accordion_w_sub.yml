@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_w_sub
+label: 'Accordion (with subheading)'
+icon_uuid: null
+icon_default: null
+description: 'Show an accordion with a H3 attached to it, useful for FAQ style pages. Use a Page section to provide a H2 introducing the FAQs.'
+behavior_plugins: {  }
