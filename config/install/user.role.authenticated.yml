@@ -21,5 +21,6 @@ permissions:
   - 'view paragraph content html_widget'
   - 'view paragraph content media_item'
   - 'view paragraph content oembed'
+  - 'view paragraph content page_header'
   - 'view paragraph content rich_text'
   - 'view the administration theme'
