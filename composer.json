@@ -1,7 +1,7 @@
 {
     "name": "gla/gla_core_profile",
     "type": "drupal-profile",
-    "description": "Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
+    "description": "Ddrupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
     "homepage": "https://github.com/GreaterLondonAuthority/accelerator-core-alpha",
     "license": "OGL-UK-3.0",
     "require": {
@@ -85,7 +85,7 @@
         "sort-packages": true
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
+        "composer-exit-on-patch-failure": false,
         "enable-patching": true,
         "patches": {
             "drupal/civicccookiecontrol": {
@@ -142,17 +142,10 @@
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
-            "@clearNonCustomDrupalDependencies",
-            "rm composer.lock"
         ],
         "post-update-cmd": [
-            "@clearNonCustomDrupalDependencies",
-            "rm composer.lock"
         ],
         "clearNonCustomDrupalDependencies": [
-            "rm -rf core",
-            "find modules/* | grep -v \"gla_*\" | xargs rm -rf",
-            "composer dump-autoload"
         ]
     }
 }

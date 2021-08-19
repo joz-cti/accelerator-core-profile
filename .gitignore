@@ -8,7 +8,7 @@ auth.json
 # file. Instead a lock file will be created by the `composer
 # create-project` command based on the latest versions within
 # the version ranges specified within the `composer.json` file.
-composer-lock.json
+# composer-lock.json
 .DS_Store
 
 # Ignore directories created by Composer
