@@ -104,3 +104,20 @@ function gla_core_profile_node_presave(EntityInterface $node) {
     }
   }
 }
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function gla_core_profile_reprocess_page(&$variables) {
+  $route = \Drupal::routeMatch()->getCurrentRouteMatch();
+
+  if ($route->getRouteName() == 'entity.node.canonical') {
+    $node = $route->getParameter('node');
+
+    if ($node->getType() == 'generic_content') {
+      if (!$node->field_c_gc_remove_title->isEmpty() && $node->field_c_gc_remove_title->value) {
+        unset($variables['page']['content']['pagetitle']);
+      }
+    }
+  }
+}
