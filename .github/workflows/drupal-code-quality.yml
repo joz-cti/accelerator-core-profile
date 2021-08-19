@@ -1,5 +1,5 @@
 name: Drupal Code Quality
-on: [pull_request]
+on: [push]
 jobs:
   Drupal-Code-Quality:
     runs-on: ubuntu-latest
@@ -15,8 +15,10 @@ jobs:
       - run: echo "The workflow is now ready to test your code on the runner."
       - run: cd ${{ github.workspace }}
 
-      - run: echo "Create auth.json file for private packagist to consume using a Github Secret."
+      - run: echuth.json file for private packagist to consume using a Github Secret."
       - run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
+      - name: Joz
+        run: patch && composer --version
       - name: Test codebase with grumPHP
         run: ./vendor/bin/grumphp run
