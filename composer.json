@@ -1,5 +1,5 @@
 {
-    "name": "gla/gla_core_profile",
+    "name": "gla/gla_core_profile ",
     "type": "drupal-profile",
     "description": "Drupal distribution and install profile to use as the base for all Drupal properties within the GLA Digital Estate",
     "homepage": "https://github.com/GreaterLondonAuthority/accelerator-core-alpha",
