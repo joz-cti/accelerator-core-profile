@@ -141,17 +141,10 @@
     "prefer-stable": true,
     "scripts": {
         "post-install-cmd": [
-            "@clearNonCustomDrupalDependencies",
-            "rm composer.lock"
         ],
         "post-update-cmd": [
-            "@clearNonCustomDrupalDependencies",
-            "rm composer.lock"
         ],
         "clearNonCustomDrupalDependencies": [
-            "rm -rf core",
-            "find modules/* | grep -v \"gla_*\" | xargs rm -rf",
-            "composer dump-autoload"
         ]
     }
 }
