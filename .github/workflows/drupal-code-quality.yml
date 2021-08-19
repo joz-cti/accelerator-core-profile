@@ -19,4 +19,4 @@ jobs:
       - run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
       - name: Test codebase with grumPHP
-        run: composer install && ./vendor/bin/grumphp run
+        run: ./vendor/bin/grumphp run
