@@ -22,6 +22,7 @@ install:
   - ckeditor_config
   - codemirror_editor
   - components
+  - config
   - config_filter
   - config_ignore
   - config_pages
