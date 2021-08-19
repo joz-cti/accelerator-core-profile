@@ -19,6 +19,6 @@ jobs:
       - run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
       - name: Joz
-        run: patch && composer --version
-      - name: Test codebase with grumPHP
-        run: ./vendor/bin/grumphp run
+        run: patch --version
+      # - name: Test codebase with grumPHP
+      #   run: ./vendor/bin/grumphp run
