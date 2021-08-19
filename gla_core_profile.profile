@@ -22,6 +22,18 @@ function gla_core_profile_preprocess_page(&$variables) {
     $active_theme = \Drupal::config('system.theme')->get('default');
     $variables['#attached']['library'][] = $active_theme . '/admin-styles';
   }
+
+  $route = \Drupal::routeMatch()->getCurrentRouteMatch();
+
+  if ($route->getRouteName() == 'entity.node.canonical') {
+    $node = $route->getParameter('node');
+
+    if ($node->getType() == 'generic_content') {
+      if (!$node->field_c_gc_remove_title->isEmpty() && $node->field_c_gc_remove_title->value) {
+        unset($variables['page']['content']['pagetitle']);
+      }
+    }
+  }
 }
 
 /**
