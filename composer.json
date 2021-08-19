@@ -84,7 +84,7 @@
         "sort-packages": true
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
+        "composer-exit-on-patch-failure": false,
         "enable-patching": true,
         "patches": {
             "drupal/civicccookiecontrol": {
