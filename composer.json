@@ -93,7 +93,6 @@
                 "Unable to add dummy API key allow for config override: https://www.drupal.org/project/civicccookiecontrol/issues/3225390": "https://www.drupal.org/files/issues/2021-07-27/allow-api-validation-to-be-disabled-3225390-2.patch"
             },
             "drupal/core": {
-                "'Negate' form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
                 "Add a hook to modify oEmbed resource data": "https://www.drupal.org/files/issues/2021-06-17/3042423-32.patch",
                 "Allow tokens for url of the Link field": "https://www.drupal.org/files/issues/2020-04-22/core_2903336-33_allow-tokens-in-link-url.patch",
                 "Can only intentionally re-render an entity with references 20 times": "https://www.drupal.org/files/issues/2019-12-04/drupal-entity_re-rendering_limited-2940605-19.patch",
@@ -101,6 +100,7 @@
                 "Drupal.ajax does not guarantee that 'add new JS file to page' commands have finished before calling said JS": "https://www.drupal.org/files/issues/2021-06-07/1988968-236.patch",
                 "Install Profile fails if Module depends on Theme": "https://www.drupal.org/files/issues/2018-12-19/0001-Attempt-to-install-a-theme-before-throwing-an-except.patch",
                 "Invoke hook after a site install is complete": "https://www.drupal.org/files/issues/2019-05-09/2924549-30.patch",
+                "Negate form value for condition plugins should be cast to boolean in validation.": "https://www.drupal.org/files/issues/2020-03-23/3114467-8.patch",
                 "Node form layout looks awkward on wide screens since #3158854: https://www.drupal.org/project/drupal/issues/3184667": "https://www.drupal.org/files/issues/2021-08-03/3184667-37.patch",
                 "Notice: Undefined index: #type in drupal_process_states()": "https://www.drupal.org/files/issues/2019-12-05/2700667-89.patch",
                 "Provide option to set ajax indicator with .use-ajax and .use-ajax-submit": "https://www.drupal.org/files/issues/2020-12-16/2818463-15.patch",
