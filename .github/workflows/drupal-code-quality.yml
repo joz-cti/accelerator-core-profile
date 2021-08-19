@@ -15,7 +15,7 @@ jobs:
       - run: echo "The workflow is now ready to test your code on the runner."
       - run: cd ${{ github.workspace }}
 
-      - run: echuth.json file for private packagist to consume using a Github Secret."
+      - run: echo "Auth.json file for private packagist to consume using a Github Secret."
       - run: echo '${{ secrets.COMPOSER_AUTH_JSON }}' > $GITHUB_WORKSPACE/auth.json
 
       - name: Joz
