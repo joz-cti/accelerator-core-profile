@@ -10,6 +10,7 @@ permissions:
   - 'view media'
   - 'view paragraph content accordion'
   - 'view paragraph content accordion_item'
+  - 'view paragraph content accordion_w_sub'
   - 'view paragraph content blockquote'
   - 'view paragraph content button'
   - 'view paragraph content buttons'

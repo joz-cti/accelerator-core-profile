@@ -1,0 +1,351 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9e44958f-af9a-401e-b9b3-fc41df77de87
+  bundle: generic_content
+  default_langcode: en
+  depends:
+    99d317e6-ef6c-497c-b1bc-24b001e386f4: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Accordion (with subheading) component (example content)'
+  created:
+    -
+      value: 1629284838
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: ''
+      langcode: en
+  published_at:
+    -
+      value: 1629285132
+  field_c_gc_page_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8a2f605c-d747-4908-840f-eddc30f915b0
+          bundle: rich_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629285065
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_rt_rich_text:
+            -
+              value: "<p>This page demonstrates the Accordion (with subheading) component, which is shown in the designs as being used to create a FAQ-style page.</p>\r\n\r\n<p>The H2 headings (e.g. 'Frequently Asked Questions' will be provided by a Page section component).</p>\r\n\r\n<p>The H3 headings (e.g. 'Coronavirus: What you need to know to stay safe') are provided by the&nbsp;Accordion (with subheading) component, and then the Accordion item headings are H4s.</p>\r\n\r\n<p>The H3 headings from the Accordion (with subheading) component have <code>id</code> attributes so they <a href=\"#coronavirus-what-you-need-to-know-to-stay-safe\">can be used as the target for anchor/jump links</a>.</p>\r\n"
+              format: full_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f46e0e4c-dbca-4b19-bdcd-83670b41aaa6
+          bundle: accordion_w_sub
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629284863
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_awh_accordion:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0db233bc-7465-4080-8d8f-54d1384e9a32
+                  bundle: accordion
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629284863
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_a_items:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: b7222bbe-1049-4ecf-abb7-fa662376931c
+                          bundle: accordion_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629284863
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_ai_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 53f4c6b3-4b69-46cb-a49d-7a3a18cbb74e
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1629285002
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_p_rt_rich_text:
+                                    -
+                                      value: "<p>Sed sed viverra sem. Etiam sapien dui, fermentum in tempor ac, sagittis ac mauris. Vivamus a odio sit amet sapien laoreet gravida. Curabitur id sapien non urna sodales blandit. Curabitur in porttitor erat. Ut blandit enim ac ultrices aliquet. Sed auctor dignissim enim sed pretium. Aliquam diam felis, gravida id tempus non, gravida quis dolor. Sed diam eros, eleifend sit amet vehicula ac, fermentum eget nulla.</p>\r\n"
+                                      format: full_html
+                          field_p_ai_heading:
+                            -
+                              value: 'What is Coronavirus?'
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 8f3857f7-3847-4cf2-8aa6-9de0d0b50d0a
+                          bundle: accordion_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629284966
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_ai_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 2ac09872-f804-45fe-8cdd-7878842ac76d
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1629285010
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_p_rt_rich_text:
+                                    -
+                                      value: "<p>In hac habitasse platea dictumst. Praesent hendrerit lectus metus, at luctus ante convallis ut. Aliquam pretium lectus sed mi tempus rutrum. Maecenas ligula risus, eleifend a porttitor a, semper hendrerit dolor. Morbi quis justo enim. Proin dapibus ornare eros sit amet euismod. Nulla ut nulla in nulla varius pulvinar vitae ac arcu. Curabitur sodales libero sed urna congue, at commodo ligula imperdiet. Mauris in placerat elit. Proin vel condimentum arcu, malesuada consectetur leo.</p>\r\n"
+                                      format: full_html
+                          field_p_ai_heading:
+                            -
+                              value: 'Who needs to wear a face covering?'
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 8b4a821b-d03e-43de-b67a-43e657c795b3
+                          bundle: accordion_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629284974
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_ai_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 7befad86-0109-4301-a456-ea044449a1c9
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1629285019
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_p_rt_rich_text:
+                                    -
+                                      value: "<p>In ornare venenatis elit at dignissim. Fusce fringilla pellentesque lorem, et congue nisi varius ac. Cras porttitor bibendum risus, quis faucibus massa posuere nec. Duis eu dui fermentum, semper urna et, suscipit sem. Suspendisse sit amet aliquam augue. Proin turpis lacus, ullamcorper sed arcu tincidunt, elementum tincidunt eros. Pellentesque odio mauris, tempus at leo nec, vehicula lobortis orci. Nam in justo massa. Suspendisse potenti. Aenean pharetra ullamcorper dui, et iaculis dui congue sed. Sed ut turpis sed sem cursus congue in quis dolor. Quisque lacus lorem, eleifend sit amet diam et, tincidunt mollis risus. Sed felis arcu, facilisis vitae hendrerit blandit, sagittis sed est. Aliquam non risus eros.</p>\r\n"
+                                      format: full_html
+                          field_p_ai_heading:
+                            -
+                              value: 'Is wearing a face covering mandatory?'
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 44993bbe-b022-47bd-8b40-4f8a72c85eeb
+                          bundle: accordion_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629284979
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_ai_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: ce438b20-c118-4ebb-a74a-366c573a82a3
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1629285027
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_p_rt_rich_text:
+                                    -
+                                      value: "<p>Duis vestibulum, leo at feugiat vestibulum, enim urna aliquet libero, sit amet gravida felis enim ac odio. Nullam nulla justo, malesuada a magna nec, consequat ultrices justo. Nunc in sapien ac nisi fringilla vehicula. Phasellus laoreet turpis et velit semper, ultrices aliquam quam vehicula. Aenean maximus sem et metus porttitor bibendum. Etiam tempor erat non dictum lacinia. Maecenas ut nibh maximus, eleifend orci vitae, scelerisque erat. Nulla non neque pellentesque, elementum tortor in, dapibus magna. Quisque lorem magna, pellentesque id lobortis a, convallis sit amet nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas lobortis nulla eget augue hendrerit varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada libero et risus aliquet, quis commodo erat maximus.</p>\r\n"
+                                      format: full_html
+                          field_p_ai_heading:
+                            -
+                              value: 'Can I use public transport?'
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 16fb3db4-b27b-4b69-a3a3-e1051464dc3b
+                          bundle: accordion_item
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1629284990
+                          behavior_settings:
+                            -
+                              value: {  }
+                          field_p_ai_components:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: ccf7d97f-8822-483a-8417-feac6a9012a7
+                                  bundle: rich_text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1629285035
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  field_p_rt_rich_text:
+                                    -
+                                      value: "<p>Curabitur risus urna, facilisis quis sapien eget, egestas ultrices neque. Phasellus ut facilisis ex, vitae consequat nisi. Ut id mauris lacinia, scelerisque leo eget, posuere turpis. Sed at quam nec quam ullamcorper pulvinar. Integer pellentesque lorem sed erat mollis, in venenatis augue fermentum. Cras in hendrerit tellus. Integer id volutpat urna, eu hendrerit leo. Quisque odio nisl, varius ut elit nec, porttitor pulvinar lacus.</p>\r\n"
+                                      format: full_html
+                          field_p_ai_heading:
+                            -
+                              value: 'What is NHS Test and trace and how does it work?'
+          field_p_awh_heading:
+            -
+              value: 'Coronavirus: What you need to know to stay safe'
+  field_c_gc_remove_breadcrumbs:
+    -
+      value: false
+  field_c_gc_remove_title:
+    -
+      value: false
+  field_c_gc_visually_hide_title:
+    -
+      value: false
+  field_sapi_exclude:
+    -
+      value: false
+  field_teaser:
+    -
+      value: 'Donec et laoreet arcu, id dapibus nisi. Sed mattis tellus.'
+  field_teaser_image:
+    -
+      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
