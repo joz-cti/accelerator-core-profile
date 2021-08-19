@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_hero_header_theme
+    - paragraphs.paragraphs_type.hero_header
+  module:
+    - options
+id: paragraph.hero_header.field_p_hero_header_theme
+field_name: field_p_hero_header_theme
+entity_type: paragraph
+bundle: hero_header
+label: Theme
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: light
+default_value_callback: ''
+settings: {  }
+field_type: list_string

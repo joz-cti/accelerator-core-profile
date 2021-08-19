@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_hero_header_heading
+    - paragraphs.paragraphs_type.hero_header
+id: paragraph.hero_header.field_p_hero_header_heading
+field_name: field_p_hero_header_heading
+entity_type: paragraph
+bundle: hero_header
+label: Heading
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

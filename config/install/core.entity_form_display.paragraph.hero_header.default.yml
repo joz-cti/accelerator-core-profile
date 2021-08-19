@@ -1,0 +1,103 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_header.field_p_hero_header_components
+    - field.field.paragraph.hero_header.field_p_hero_header_heading
+    - field.field.paragraph.hero_header.field_p_hero_header_height
+    - field.field.paragraph.hero_header.field_p_hero_header_image
+    - field.field.paragraph.hero_header.field_p_hero_header_theme
+    - field.field.paragraph.hero_header.field_p_hero_header_video
+    - paragraphs.paragraphs_type.hero_header
+  module:
+    - field_group
+    - media_library
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_hero_header_options:
+      children:
+        - field_p_hero_header_height
+        - field_p_hero_header_theme
+      parent_name: ''
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Options
+    group_hero_h_background_media:
+      children:
+        - field_p_hero_header_image
+        - field_p_hero_header_video
+      parent_name: ''
+      weight: 2
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: 'Background media'
+id: paragraph.hero_header.default
+targetEntityType: paragraph
+bundle: hero_header
+mode: default
+content:
+  field_p_hero_header_components:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_p_hero_header_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_p_hero_header_height:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_p_hero_header_image:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_p_hero_header_theme:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_p_hero_header_video:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

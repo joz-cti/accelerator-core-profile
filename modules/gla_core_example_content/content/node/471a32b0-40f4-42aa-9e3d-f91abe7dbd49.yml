@@ -1,0 +1,118 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 471a32b0-40f4-42aa-9e3d-f91abe7dbd49
+  bundle: generic_content
+  default_langcode: en
+  depends:
+    99d317e6-ef6c-497c-b1bc-24b001e386f4: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Hero header component (example content)'
+  created:
+    -
+      value: 1629302270
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: ''
+      langcode: en
+  published_at:
+    -
+      value: 1629302364
+  field_c_gc_page_components:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4748e983-9f8a-4e44-8ba2-e7ef02770ca9
+          bundle: hero_header
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629302283
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_p_hero_header_components:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8753e99d-7f63-477c-b3bd-d49f2e836ae9
+                  bundle: rich_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629302300
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_p_rt_rich_text:
+                    -
+                      value: "<p>Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>\r\n"
+                      format: full_html
+          field_p_hero_header_heading:
+            -
+              value: 'Example Heading'
+          field_p_hero_header_height:
+            -
+              value: full
+          field_p_hero_header_image:
+            -
+              entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
+          field_p_hero_header_theme:
+            -
+              value: light
+  field_c_gc_remove_breadcrumbs:
+    -
+      value: false
+  field_c_gc_remove_title:
+    -
+      value: false
+  field_c_gc_visually_hide_title:
+    -
+      value: false
+  field_sapi_exclude:
+    -
+      value: false
+  field_teaser:
+    -
+      value: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.'
+  field_teaser_image:
+    -
+      entity: 99d317e6-ef6c-497c-b1bc-24b001e386f4
