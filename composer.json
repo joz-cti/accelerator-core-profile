@@ -33,6 +33,7 @@
         "drupal/datalayer": "^1.0@beta",
         "drupal/default_content": "^2.0@alpha",
         "drupal/disable_html5_validation": "^1.1",
+        "drupal/entity_browser": "^2",
         "drupal/entity_reference_display": "^1.4",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/environment_indicator": "^4.0",
